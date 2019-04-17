@@ -1,3 +1,159 @@
-<html>
-<title>test</title>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+
+	<!-- Titles -->
+	<title>Vierra Trade</title>
+    <meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<!-- Адаптивная  верстка -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<!-- Syles -->
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="fonts/fonts.css">
+
+	<!-- FavIcons -->
+	<link rel="icon" href="#"  type="image/x-icon" />
+	<link rel="shortcut icon" href="#"  type="image/x-icon" />
+    <link rel="apple-touch-icon" href="#">
+
+</head>
+<body>
+
+    <div class="container-fluid">
+    	
+        <div class="container">	
+            <header class="header">
+            	<div class="logo-wrap">
+            		    <a class="logo-link" href="index.html">
+                		    <div class="logo">
+                	            <img src="img/logo.svg" width="53" height="43" alt="Компания Viterra Trade" aria-label="Логотип компании Viterra Trade">
+                	            <p class="company-name" aria-label="Название компании">Viterra Trade</p>
+                            </div>
+                            <p class="company-slogan" aria-label="Слоган компании">Объединение надежных партнеров</p>
+                        </a>   
+                </div>
+                <!-- logo-wrap -->        	
+                    <nav class="nav">
+                    	<ul class="nav-list" role="menubar">
+                    		<li class="nav__item" role="menuitem"><a class="nav__link" href="#">Новости</a></li>
+                    		<li class="nav__item" role="menuitem"><a class="nav__link" href="#">Объявления</a></li>
+                    		<li class="nav__item" role="menuitem">
+                    			<a class="nav__link submenu" href="#" aria-haspopup="true"
+                    			data-toggle="dropdown">Реестр компаний</a>
+                                <ul class="submenu-nav" role="menu">
+                                    <li class="submenu__item" role="menuitem"><a class="submenu__link" href="#">Ищу работу</a></li>
+                                    <li class="submenu__item" role="menuitem"><a class="submenu__link" href="#">Ищу сотрудников</a></li>
+                                </ul>     
+                    		</li>
+                    		<li class="nav__item" role="menuitem"><a class="nav__link" href="#">Конкурсы Online</a></li>
+                    		<li class="nav__item" role="menuitem"><a class="nav__link" href="#">Трудоустройство</a></li>
+                    		<li class="nav__item" role="menuitem"><a class="nav__link" href="#">Проекты</a></li>
+                    	</ul>
+                    </nav>
+                    <!-- nav -->
+                	<div class="login-btn"></div>
+            </header>
+            <!-- header -->
+        </div>
+        <!-- container -->
+
+        <main class="main">
+        	
+            <div class="header-img">
+            	
+                <div class="container container--relative clearfix">
+                	
+                	<div class="title-wrap">
+                        <h1 class="main__title">Торговая площадка пищевой промышленности</h1>
+                        <h2 class="main__subtitle">Более 200 000 актуальных предложений</h2>
+                    </div>
+            
+                    <div class="tabs">
+                        <input id="tab1" type="radio" class="tab__input" name="tabs" checked>
+                        <label for="tab1" title="Вкладка 1">Товары</label>
+                         
+                        <input id="tab2" type="radio" class="tab__input" name="tabs">
+                        <label for="tab2" title="Вкладка 2">Запросы</label>
+             
+                        <input id="tab3" type="radio" class="tab__input" name="tabs">
+                        <label for="tab3" title="Вкладка 3">Товары</label>
+             
+                        <section class="tabs-content" id="content1">
+                            <form class="search-form" method="POST" action="#">
+                                <input id="search" type="text" class="search" placeholder="Поиск...">
+                                <label for="search"></label>
+                                <input id="regions" type="text" class="regions" placeholder="Все регионы">
+                                <label for="regions"></label>
+                                <input id="from" type="text" class="from" placeholder="От">
+                                <label for="from"></label>
+                                <input id="to" type="text" class="to" placeholder="До">
+                                <label for="to"></label>
+                                <input class="btn search-form__btn" type="submit" value="Поиск">
+                                <p>
+                                    <input id="form-checkbox" type="checkbox" class="form-checkbox visually-hidden" checked>
+                                    <label for="form-checkbox">Точное совпадение</label>
+                                </p>
+                            </form>
+                        </section>
+            
+                        <section class="tabs-content" id="content2">
+                            <form class="search-form" method="POST" action="#">
+                                <input id="search" type="text" class="search" placeholder="Поиск...">
+                                <label for="search"></label>
+                                <input id="regions" type="text" class="regions" placeholder="Все регионы">
+                                <label for="regions"></label>
+                                <input id="from" type="text" class="from" placeholder="От">
+                                <label for="from"></label>
+                                <input id="to" type="text" class="to" placeholder="До">
+                                <label for="to"></label>
+                                <input class="btn search-form__btn" type="submit" value="Поиск">
+                                <p>
+                                    <input id="form-checkbox" type="checkbox" class="form-checkbox visually-hidden" checked>
+                                    <label for="form-checkbox">Точное совпадение</label>
+                                </p>
+                            </form>
+                        </section>
+            
+                        <section class="tabs-content" id="content3">
+                            <form class="search-form" method="POST" action="#">
+                                <input id="search" type="text" class="search" placeholder="Поиск...">
+                                <label for="search"></label>
+                                <input id="regions" type="text" class="regions" placeholder="Все регионы">
+                                <label for="regions"></label>
+                                <input id="from" type="text" class="from" placeholder="От">
+                                <label for="from"></label>
+                                <input id="to" type="text" class="to" placeholder="До">
+                                <label for="to"></label>
+                                <input class="btn search-form__btn" type="submit" value="Поиск">
+                                <p>
+                                    <input id="form-checkbox" type="checkbox" class="form-checkbox visually-hidden" checked>
+                                    <label for="form-checkbox">Точное совпадение</label>
+                                </p>
+                            </form>
+                        </section>
+                    </div>
+                    <!-- tabs -->
+                    <div class="categories"></div>
+                </div>
+                <!-- container -->
+            </div>
+            <!-- header-img -->
+
+        </main>
+
+        
+
+    </div>	
+
+
+
+<!-- Scripts -->
+<script src="js/main.min.js"></script>
+	
+</body>
 </html>
