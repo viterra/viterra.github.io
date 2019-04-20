@@ -31,7 +31,7 @@
             	<div class="logo-wrap">
             		    <a class="logo-link" href="index.html">
                 		    <div class="logo">
-                	            <img src="img/logo.svg" width="53" height="43" alt="Компания Viterra Trade" aria-label="Логотип компании Viterra Trade">
+                	            <img src="img/logo.svg" width="50" height="40" alt="Компания Viterra Trade" aria-label="Логотип компании Viterra Trade">
                 	            <p class="company-name" aria-label="Название компании">Viterra Trade</p>
                             </div>
                             <p class="company-slogan" aria-label="Слоган компании">Объединение надежных партнеров</p>
@@ -57,6 +57,9 @@
                     </nav>
                     <!-- nav -->
                 	<div class="login-btn"></div>
+                    <button id="menu__button" class="cmn-toggle-switch cmn-toggle-switch__htx">
+                        <span>toggle menu</span>
+                    </button>
             </header>
             <!-- header -->
         </div>
@@ -81,7 +84,7 @@
                         <label for="tab2" title="Вкладка 2">Запросы</label>
              
                         <input id="tab3" type="radio" class="tab__input" name="tabs">
-                        <label for="tab3" title="Вкладка 3">Товары</label>
+                        <label for="tab3" title="Вкладка 3">Тендеры</label>
              
                         <section class="tabs-content" id="content1">
                             <form class="search-form" method="POST" action="#">
@@ -89,10 +92,12 @@
                                 <label for="search_1"></label>
                                 <input id="regions_1" type="text" class="regions" placeholder="Все регионы">
                                 <label for="regions_1"></label>
-                                <input id="from_1" type="text" class="from" placeholder="От">
-                                <label for="from_1"></label>
-                                <input id="to_1" type="text" class="to" placeholder="До">
-                                <label for="to_1"></label>
+                                <div class="price-wrap">
+                                    <input id="from_1" type="text" class="from" placeholder="От">
+                                    <label for="from_1"></label>
+                                    <input id="to_1" type="text" class="to" placeholder="До">
+                                    <label for="to_1"></label>
+                                </div>
                                 <input class="btn search-form__btn" type="submit" value="Поиск">
                                 <p>
                                     <input id="form-checkbox_1" type="checkbox" class="form-checkbox visually-hidden" checked>
@@ -193,7 +198,7 @@
             <!-- header-img -->
             <section class="information">
             
-            	<div class="container">
+            	<div class="container container--mobile">
             
             		<ul class="information-list">
             
@@ -250,10 +255,10 @@
             
             		    		<li class="information__column-card-item">
             		    			<h4 class="information__column-card-title">
-            		    			    Лапа Horsсh(хорш) бронированная 375 мм
+            		    			    Продаём подбарабанье комбайна Доминато...
             		    			</h4>
             		    			<p class="information__column-card-desc">
-            		    			    Лапа стрельчатая, Horsсh, 375 мм Хорш бронированная Лапа стрельчатая 15070-СА-375..
+            		    			    Продаём подбарабанье комбайна Доминатор Мега 218 № 662902.2 Новое, производство Германия CLAAS.
             		    		    </p>
             		    			<div class="information__column-card-footer">
             		    				<button class="information__column-card-btn">
@@ -261,7 +266,9 @@
             		    			    </button>
             		    				<ul class="information__column-card-data">
             		    					<li>
-            		    						<a class="company__link" href="#">ООО НПП Валок</a>
+            		    						<a class="company__link" href="#">
+            		    						    ИП Виноградова Людмила
+            		    					    </a>
             		    					</li>
             		    					<li class="date">11 ноября 2018</li>
             		    				</ul>
@@ -292,10 +299,10 @@
             
             		    		<li class="information__column-card-item">
             		    			<h4 class="information__column-card-title">
-            		    			    Лапа Horsсh(хорш) бронированная 375 мм
+            		    			    Продаём подбарабанье комбайна Доминато...
             		    			</h4>
             		    			<p class="information__column-card-desc">
-            		    			    Лапа стрельчатая, Horsсh, 375 мм Хорш бронированная Лапа стрельчатая 15070-СА-375..
+            		    			    Продаём подбарабанье комбайна Доминатор Мега 218 № 662902.2 Новое, производство Германия CLAAS.
             		    		    </p>
             		    			<div class="information__column-card-footer">
             		    				<button class="information__column-card-btn">
@@ -303,7 +310,9 @@
             		    			    </button>
             		    				<ul class="information__column-card-data">
             		    					<li>
-            		    						<a class="company__link" href="#">ООО НПП Валок</a>
+            		    						<a class="company__link" href="#">
+            		    						    ИП Виноградова Людмила
+            		    					    </a>
             		    					</li>
             		    					<li class="date">11 ноября 2018</li>
             		    				</ul>
@@ -389,10 +398,10 @@
             
             		    		<li class="information__column-card-item">
             		    			<h4 class="information__column-card-title">
-            		    			    Лапа Horsсh(хорш) бронированная 375 мм
+            		    			    Продаём подбарабанье комбайна Доминато...
             		    			</h4>
             		    			<p class="information__column-card-desc">
-            		    			    Лапа стрельчатая, Horsсh, 375 мм Хорш бронированная Лапа стрельчатая 15070-СА-375..
+            		    			    Продаём подбарабанье комбайна Доминатор Мега 218 № 662902.2 Новое, производство Германия CLAAS.
             		    		    </p>
             		    			<div class="information__column-card-footer">
             		    				<button class="information__column-card-btn">
@@ -400,7 +409,9 @@
             		    			    </button>
             		    				<ul class="information__column-card-data">
             		    					<li>
-            		    						<a class="company__link" href="#">ООО НПП Валок</a>
+            		    						<a class="company__link" href="#">
+            		    						    ИП Виноградова Людмила
+            		    					    </a>
             		    					</li>
             		    					<li class="date">11 ноября 2018</li>
             		    				</ul>
@@ -431,10 +442,10 @@
             
             		    		<li class="information__column-card-item">
             		    			<h4 class="information__column-card-title">
-            		    			    Лапа Horsсh(хорш) бронированная 375 мм
+            		    			    Продаём подбарабанье комбайна Доминато...
             		    			</h4>
             		    			<p class="information__column-card-desc">
-            		    			    Лапа стрельчатая, Horsсh, 375 мм Хорш бронированная Лапа стрельчатая 15070-СА-375..
+            		    			    Продаём подбарабанье комбайна Доминатор Мега 218 № 662902.2 Новое, производство Германия CLAAS.
             		    		    </p>
             		    			<div class="information__column-card-footer">
             		    				<button class="information__column-card-btn">
@@ -442,7 +453,9 @@
             		    			    </button>
             		    				<ul class="information__column-card-data">
             		    					<li>
-            		    						<a class="company__link" href="#">ООО НПП Валок</a>
+            		    						<a class="company__link" href="#">
+            		    						    ИП Виноградова Людмила
+            		    					    </a>
             		    					</li>
             		    					<li class="date">11 ноября 2018</li>
             		    				</ul>
@@ -523,7 +536,7 @@
             
                                 <li class="tender-column-card">
             		    	        <p class="card__number">№2323</p>
-            		    	        <h3 class="card__title">Наименование тендера</h3>
+            		    	        <h3 class="card__title">Наименование тендера наименование тендера</h3>
             		    	        <p class="card__deadline">Окончание: 
             		    		        <span class="card__date">28 ноября 2018</span>
             		    	        </p>
@@ -579,7 +592,7 @@
                 <!-- container -->
             </section>
             <!-- information -->
-            <div class="container">
+            <div class="container container--mobile">
             
                 <section class="search-section">
                 	
@@ -616,12 +629,12 @@
                         <div class="search-form-second-row">
                             <div class="second-row__block">
                                 <p class="input__title">Ваш e-mail</p>
-                                <input id="email" type="email" name="email">
+                                <input id="email" class="email" type="email" name="email">
                             </div>
                             <div class="btn-text-wrap">
                                 <input class="submit__btn" type="submit" value="Подобрать">
                                 <p class="text-warning">
-                                    Нажимая на кнопку Подобрать, вы даете согласие на обработку своих персональных данных и соглашаетесь с пользовательским соглашением. ** постарайтесь указать наиболее общее слово (корень слова). Например для "мясо говядины" лучше выбрать "говядина"
+                                    Нажимая на кнопку Подобрать, вы даете согласие на обработку своих персональных данных и соглашаетесь с пользовательским соглашением. ** постарайтесь<br> указать наиболее общее слово (корень слова). Например для "мясо говядины" лучше выбрать "говядина"
                                 </p>
                             </div>
                         </div>
@@ -633,7 +646,7 @@
             
             </div>
             <!-- container -->
-            <div class="container">
+            <div class="container container--mobile ">
             	
             	<section class="news">
             		
@@ -755,7 +768,7 @@
         <footer class="footer">
         	<div class="footer-top">
                 <div class="container">
-            	    <div class="footer-nav">
+            	    <nav class="footer-nav">
             		    <div class="first-column">
                             <h3 class="column__title">Новости</h3>
                             <ul class="column-list">
@@ -832,7 +845,7 @@
                                 </li>
                             </ul>      
                         </div>
-            	    </div>
+            	    </nav>
                 </div>
                 <!-- container -->
             </div>
