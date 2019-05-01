@@ -57,24 +57,84 @@
         
                 <nav class="nav">
                         <ul class="nav-list" role="menubar">
-                            <li class="nav__item" role="menuitem"><a class="nav__link" href="#">Новости</a></li>
-                            <li class="nav__item" role="menuitem"><a class="nav__link" href="#">Объявления</a></li>
                             <li class="nav__item" role="menuitem">
                                 <a class="nav__link submenu" href="#" aria-haspopup="true"
-                                    data-toggle="dropdown">Реестр компаний</a>
+                                data-toggle="dropdown">Новости</a>
+                                <ul class="submenu-nav" role="menu">
+                                    <li class="submenu__item" role="menuitem"><a class="submenu__link" href="#">Ищу работу</a></li>
+                                    <li class="submenu__item" role="menuitem"><a class="submenu__link" href="#">Ищу сотрудников</a></li>
+                                </ul>  
+                            </li>
+                            <li class="nav__item" role="menuitem">
+                                <a class="nav__link submenu" href="#" aria-haspopup="true"
+                                data-toggle="dropdown">Объявления</a>
+                                <ul class="submenu-nav" role="menu">
+                                    <li class="submenu__item" role="menuitem"><a class="submenu__link" href="#">Ищу работу</a></li>
+                                    <li class="submenu__item" role="menuitem"><a class="submenu__link" href="#">Ищу сотрудников</a></li>
+                                </ul>  
+                            </li>
+                            <li class="nav__item" role="menuitem">
+                                <a class="nav__link submenu" href="#" aria-haspopup="true"
+                                data-toggle="dropdown">Реестр компаний</a>
                                 <ul class="submenu-nav" role="menu">
                                     <li class="submenu__item" role="menuitem"><a class="submenu__link" href="#">Ищу работу</a></li>
                                     <li class="submenu__item" role="menuitem"><a class="submenu__link" href="#">Ищу сотрудников</a></li>
                                 </ul>     
                             </li>
-                            <li class="nav__item" role="menuitem"><a class="nav__link" href="#">Конкурсы Online</a></li>
-                            <li class="nav__item" role="menuitem"><a class="nav__link" href="#">Трудоустройство</a></li>
-                            <li class="nav__item" role="menuitem"><a class="nav__link" href="#">Проекты</a></li>
+                            <li class="nav__item" role="menuitem">
+                                <a class="nav__link submenu" href="#" aria-haspopup="true"
+                                data-toggle="dropdown">Конкурсы Online</a>
+                                <ul class="submenu-nav" role="menu">
+                                    <li class="submenu__item" role="menuitem"><a class="submenu__link" href="#">Ищу работу</a></li>
+                                    <li class="submenu__item" role="menuitem"><a class="submenu__link" href="#">Ищу сотрудников</a></li>
+                                </ul>  
+                            </li>
+                            <li class="nav__item" role="menuitem">
+                                <a class="nav__link submenu" href="#" aria-haspopup="true"
+                                data-toggle="dropdown">Трудоустройство</a>
+                                <ul class="submenu-nav" role="menu">
+                                    <li class="submenu__item" role="menuitem"><a class="submenu__link" href="#">Ищу работу</a></li>
+                                    <li class="submenu__item" role="menuitem"><a class="submenu__link" href="#">Ищу сотрудников</a></li>
+                                </ul> 
+                            </li>
+                            <li class="nav__item" role="menuitem">
+                                <a class="nav__link submenu" href="#" aria-haspopup="true"
+                                data-toggle="dropdown">Проекты</a>
+                                <ul class="submenu-nav" role="menu">
+                                    <li class="submenu__item" role="menuitem"><a class="submenu__link" href="#">Ищу работу</a></li>
+                                    <li class="submenu__item" role="menuitem"><a class="submenu__link" href="#">Ищу сотрудников</a></li>
+                                </ul> 
+                            </li>
                         </ul>
                 </nav>
                 <!-- nav -->
                 
-                    <div class="login-btn"></div>
+                <div class="login-btn"></div>
+                <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                    <symbol id="user-login-icon" viewBox="0 0 350 350">
+                        <path d="M175,171.173c38.914,0,70.463-38.318,70.463-85.586C245.463,38.318,235.105,0,175,0s-70.465,38.318-70.465,85.587
+        		            C104.535,132.855,136.084,171.173,175,171.173z"/>
+                        <path d="M41.909,301.853C41.897,298.971,41.885,301.041,41.909,301.853L41.909,301.853z"/>
+                        <path d="M308.085,304.104C308.123,303.315,308.098,298.63,308.085,304.104L308.085,304.104z"/>
+                        <path d="M307.935,298.397c-1.305-82.342-12.059-105.805-94.352-120.657c0,0-11.584,14.761-38.584,14.761
+                            s-38.586-14.761-38.586-14.761c-81.395,14.69-92.803,37.805-94.303,117.982c-0.123,6.547-0.18,6.891-0.202,6.131
+                            c0.005,1.424,0.011,4.058,0.011,8.651c0,0,19.592,39.496,133.08,39.496c113.486,0,133.08-39.496,133.08-39.496
+                            c0-2.951,0.002-5.003,0.005-6.399C308.062,304.575,308.018,303.664,307.935,298.397z"/>
+                    </symbol>
+                </svg>
+                <svg class="user-login-icon">
+                    <use xlink:href="#user-login-icon" href="#user-login-icon" />
+                </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                        <symbol id="arrow-down-icon" viewBox="0 0 451.846 451.847">
+                            <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+                            L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+                            c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/>
+                        </symbol>
+                    </svg>
+                    <svg class="arrow-down-icon">
+                        <use xlink:href="#arrow-down-icon" href="#arrow-down-icon" />
+                    </svg>
             </div>
             <!-- container -->
             <div class="login-form-wrap">
@@ -86,7 +146,7 @@
                         <p class="login-form__checkbox-wrap">
                             <input id="form-checkbox__login" type="checkbox" class="login-form__checkbox visually-hidden" checked>
                             <label for="form-checkbox__login">Запомнить меня</label>
-                            <p class="login-form__lost-password">Забыли пароль?</p>
+                            <a class="login-form__lost-password" href="#">Забыли пароль?</a>
                         </p>
                         <div class="login-form__bottom-wrap">
                             <input class="login-form__btn" type="submit" value="Войти">
