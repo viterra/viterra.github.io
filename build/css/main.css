@@ -46,9 +46,24 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.header__logo-text {
+  font-size: 2.88rem;
+  font-family: 'Bernard MT Condensed';
+  font-weight: bolder;
+  color: #575455;
+  margin-left: 2rem; }
+
+.header__logo-subtitle-text {
+  font-size: 1.44rem;
+  font-family: 'FiraSans-Book';
+  color: #575455;
+  text-transform: uppercase;
+  letter-spacing: -0.15rem;
+  text-align: center; }
+
 .header__nav-fonts {
   font-size: 1.67rem;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'SourceSansPro-Regular';
   color: #212121; }
 
 .header__nav-submenu-fonts {
@@ -176,6 +191,20 @@ table {
   color: #fff;
   font-weight: 300; }
 
+.screenThree__form-agreement-text {
+  font-size: 1.44rem;
+  font-family: 'SourceSansPro-Regular';
+  color: #585858;
+  line-height: 1.3;
+  width: 71.11rem;
+  margin-left: 3.33rem; }
+
+.screenThree__title-fonts {
+  padding-bottom: 1.77rem;
+  font-size: 1.66rem;
+  font-family: 'SourceSansPro-Regular';
+  color: #212121; }
+
 .footer__nav-title {
   font-size: 2.33rem;
   font-family: 'Source Sans Pro', sans-serif;
@@ -186,13 +215,13 @@ table {
 
 .footer__nav-link-font {
   font-size: 1.66rem;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'SourceSansPro-Regular';
   color: #bfbfbf;
   line-height: 2.6; }
 
 .footer__info-text {
   font-size: 1.66rem;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'SourceSansPro-Regular';
   color: #bfbfbf;
   padding-bottom: 0.88rem; }
 
@@ -224,13 +253,13 @@ table {
 
 .checkin__title-text {
   font-size: 2.66rem;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'SourceSansPro-Regular';
   color: #fff;
   line-height: 1.2; }
 
 .checkin__subtitle-text {
   font-size: 1.66rem;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'SourceSansPro-Regular';
   color: #fff;
   opacity: 0.8;
   line-height: 1.2;
@@ -241,7 +270,7 @@ html {
 
 @media (min-width: 2400px) {
   html {
-    font-size: 13px; } }
+    font-size: 18px; } }
 
 @media (max-width: 1600px) {
   html {
@@ -504,7 +533,7 @@ a, ul, li {
   -webkit-background-size: cover;
           background-size: cover; }
 
-.screenThree__form-inputKeyword, .screenThree__form-inputIndustry, .screenThree__form-inputRegion {
+.screenThree__form-inputKeyword, .screenThree__form-inputIndustry, .screenThree__form-inputRegion, .screenThree__form-inputEmail {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -516,23 +545,49 @@ a, ul, li {
   font-size: 1.56rem;
   font-family: 'Source Sans Pro', sans-serif;
   color: #999999;
-  padding-left: 6.22rem;
-  margin-right: 0.56rem; }
+  padding-left: 2.88rem;
+  margin-right: 0.44rem; }
 
 .screenThree__form-inputMinPrice, .screenThree__form-inputMaxPrice {
-  width: 15.56rem;
+  width: 15.55rem;
   height: 5.56rem;
   background: #f5f6f8;
-  margin-right: 0.56rem;
+  margin-right: 0.11rem;
   border: none;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.56rem;
   color: #999999;
-  padding-left: 1.89rem; }
-  .screenThree__form-inputMinPrice + label::after, .screenThree__form-inputMaxPrice + label::after {
-    content: "\20BD";
-    color: #999999;
-    position: absolute; }
+  padding-left: 2rem;
+  padding-right: 3rem; }
+
+.screenThree__form-inputMinPrice + label::before {
+  content: "";
+  border-left: 0.2rem solid #f0efef;
+  height: 5.5rem;
+  position: absolute;
+  right: 5rem; }
+
+.screenThree__form-inputMinPrice + label::after {
+  content: "\20BD";
+  color: #999999;
+  position: absolute;
+  right: 2.5rem;
+  top: 0.4rem; }
+
+.screenThree__form-inputMaxPrice + label::before {
+  content: "";
+  border-left: 0.2rem solid #f0efef;
+  height: 5.5rem;
+  position: absolute;
+  left: 27rem;
+  bottom: 0rem; }
+
+.screenThree__form-inputMaxPrice + label::after {
+  content: "\20BD";
+  color: #999999;
+  position: absolute;
+  left: 28.5rem;
+  bottom: 1.9rem; }
 
 .screenOne__btn-wrap {
   display: -webkit-box;
@@ -589,6 +644,16 @@ a, ul, li {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
 
+.screenThree__form-btn {
+  font-size: 1.67rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  background: #ff7c07;
+  padding: 1.7rem 4.22rem;
+  border: none;
+  cursor: pointer; }
+
 .checkin__btn-wrap {
   margin-top: 2.66rem;
   padding-bottom: 2.66rem; }
@@ -604,7 +669,15 @@ a, ul, li {
 
 .notifications {
   width: 100%;
-  background-color: #292929; }
+  background-color: #292929;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .notifications-menu-wrap {
     display: -webkit-box;
     display: -webkit-flex;
@@ -715,51 +788,51 @@ a, ul, li {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    padding-top: 1.56rem;
-    padding-bottom: 4.22rem;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 1.55rem;
+    padding-bottom: 2.22rem;
     width: 130rem;
-    margin: auto; }
+    margin: 0 auto; }
   .header__logo {
-    width: 25.22rem; }
+    width: 24rem;
+    margin-right: 4.66rem; }
+  .header__svgLogo-wrap {
+    padding: 0;
+    margin: 0; }
+  .header__svgLogo {
+    width: 4.66rem; }
   .header__logo-link {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    background: url("../img/logo Viterra Trade 2.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    -webkit-background-size: contain;
-            background-size: contain;
-    width: 6.11rem;
-    height: 4.67rem;
-    position: relative; }
-    .header__logo-link::before {
-      content: "Viterra Trade";
-      position: absolute;
-      left: 7.8rem;
-      top: 2rem;
-      width: 17rem;
-      font-size: 2.89rem;
-      font-weight: bold;
-      color: #575455; }
-    .header__logo-link:after {
-      content: "Объединение надежных партнеров";
-      position: absolute;
-      width: 24rem;
-      top: 5rem;
-      font-family: 'Fira Sans Condensed', sans-serif;
-      font-size: 1.44rem;
-      color: #575455;
-      text-transform: uppercase; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .header__logo-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-bottom: 1rem; }
   .header__nav {
     display: -webkit-box;
     display: -webkit-flex;
@@ -769,8 +842,7 @@ a, ul, li {
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
-            flex-direction: row;
-    width: 97rem; }
+            flex-direction: row; }
   .header__nav-ul {
     display: -webkit-box;
     display: -webkit-flex;
@@ -784,18 +856,16 @@ a, ul, li {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-    -webkit-transform: translateY(40%);
-        -ms-transform: translateY(40%);
-            transform: translateY(40%);
     z-index: 1; }
   .header__nav-li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     padding: 1.44rem 1.89rem;
     -webkit-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    -webkit-transform: translateY(-10%);
-        -ms-transform: translateY(-10%);
-            transform: translateY(-10%);
     position: relative;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -829,18 +899,18 @@ a, ul, li {
               flex-direction: column;
       position: absolute;
       left: 0rem;
-      top: 4.7rem;
+      top: 4.65rem;
       background: #fff;
       width: 25.56rem;
-      padding-top: 2.8rem;
+      padding-top: 3.1rem;
       -webkit-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
   .header__nav-submenu-ul {
     display: none; }
   .header__nav-submenu-li {
-    border-top: 0.05rem solid #767777;
-    border-bottom: 0.05rem solid #767777;
+    border-top: 0.15rem solid #767777;
+    border-bottom: 0.15rem solid #767777;
     border-left: 0.1rem solid #767777;
     border-right: 0.1rem solid #767777;
     padding: 1.5rem; }
@@ -1189,7 +1259,6 @@ a, ul, li {
   background: #fff; }
 
 .screenThree {
-  height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1198,9 +1267,11 @@ a, ul, li {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 5.55rem; }
+  padding-top: 5.55rem;
+  padding-bottom: 5rem;
+  border-bottom: 0.15rem solid #f0efef; }
   .screenThree__wrap {
-    width: 133.33rem; }
+    width: 130rem; }
   .screenThree__head {
     width: 100%;
     display: -webkit-box;
@@ -1235,11 +1306,29 @@ a, ul, li {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 3.33rem;
+    padding-right: 3.33rem;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     padding-top: 4.44rem; }
+  .screenThree__form-bottom {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
 
 .footer {
   width: 100%; }
@@ -1429,3 +1518,25 @@ a, ul, li {
   -webkit-background-size: cover;
           background-size: cover;
   margin-top: 9.33rem; }
+
+.problem__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url("../404/img/Группа 7.png");
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.problem__center {
+  height: 200vh; }

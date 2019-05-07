@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./fonts/fonts.css"/>
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
     <title>Document</title>
@@ -37,7 +38,18 @@
       </section>
       <header class="header">
         <div class="header__wrap">
-          <div class="header__logo"><a class="header__logo-link" href="index.html"></a></div>
+          <div class="header__logo"><a class="header__logo-link" href="index.html">
+              <div class="header__logo-box">
+                <p class="header__logo-text">Viterra Trade</p>
+                <use class="header__svgLogo-wrap"><svg class="header__svgLogo" id="ic2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.59 55.51">
+<g id="ic1">
+<path d="M0,16.33H8.38s12.6,18,16.5,39.29H16.09Zm38-.15H44.7V9l15.15-7.8V16.33H68.1V27.51H59.92V44.08c0,4.13,7.47.75,7.47.75l1.2,10.39a40.9,40.9,0,0,1-13.41,1.36S54,45.19,44.59,27.43v-.11h-.06c-1.85-3.48-4-7.2-6.54-11.14Z" transform="translate(0 -1.18)" style="fill:#aecd44;fill-rule:evenodd"/>
+<path d="M10,16.33s12.68,18,17,39.29h2.85l12-28.3h1.12a122,122,0,0,0-6.12-11.14H31.27L23,40.63l-7.43-24.3ZM52.47,56.21s-1.54-11-7.88-25.29V41.16c0,3.26-.45,13.27,7.42,15Z" transform="translate(0 -1.18)" style="fill:#575556;fill-rule:evenodd"/>
+</g>
+</svg>
+                </use>
+              </div>
+              <p class="header__logo-subtitle-text">Объединение надежных партнеров</p></a></div>
           <nav class="header__nav">
             <ul class="header__nav-ul">
               <li class="header__nav-li"><a class="header__nav-link header__nav-fonts" href="#">
@@ -84,11 +96,7 @@
               </li>
             </ul>
           </nav>
-          <div class="header__registrationMenu-wrap">
-            <div class="header__registrationMenu"><i class="fas fa-user mineStyleUserIcon"></i>
-<i class="fas fa-chevron-down mineStyleArrowDownIconRegistration"></i>
-            </div>
-          </div>
+          <div class="header__registrationMenu-wrap"></div>
         </div>
       </header>
       <section class="screenOne">
@@ -461,44 +469,39 @@
             <div class="screenThree__form-wrap">
               <div class="screenThree__form-selectionAndSending">
                 <div class="screenThree__form-keyword">
-                  <p class="screenThree__form-keyword-title">Ключевое слово*</p>
+                  <p class="screenThree__form-keyword-title screenThree__title-fonts">Ключевое слово*</p>
                   <input class="screenThree__form-inputKeyword" type="text" id="keyword" name="keyword" placeholder="например: говядина"/>
                 </div>
                 <div class="screenThree__form-industry">
-                  <p class="screenThree__form-industry-title">Отрасль</p>
+                  <p class="screenThree__form-industry-title screenThree__title-fonts">Отрасль</p>
                   <input class="screenThree__form-inputIndustry styleLabel" type="text" id="industry" name="industry" placeholder="Все отрасли"/>
                   <label for="industry"></label>
                 </div>
                 <div class="screenThree__form-region">
-                  <p class="screenThree__form-region-title">Регион</p>
+                  <p class="screenThree__form-region-title screenThree__title-fonts">Регион</p>
                   <input class="screenThree__form-inputRegion styleLabel" type="text" id="region" name="region" placeholder="Все регионы"/>
                   <label for="region"></label>
                 </div>
                 <div class="screenThree__form-price">
-                  <p class="screenThree__form-price-title">Цена</p>
+                  <p class="screenThree__form-price-title screenThree__title-fonts">Цена</p>
                   <div class="screenThree__form-inputPrice-wrap">
-                    <input class="screenThree__form-inputMinPrice styleLabel" type="number" id="minPrice" placeholder="От"/>
+                    <input class="screenThree__form-inputMinPrice styleLabel" type="number" id="minPrice" name="minPrice" placeholder="От"/>
                     <label for="minPrice"></label>
-                    <input class="screenThree__form-inputMaxPrice styleLabel" type="number" id="maxPrice" placeholder="До"/>
+                    <input class="screenThree__form-inputMaxPrice styleLabel" type="number" id="maxPrice" name="maxPrice" placeholder="До"/>
                     <label for="maxPrice"></label>
                   </div>
                 </div>
               </div>
-              <div class="screenThree__form-selectionAndSending"><svg class="svgOne" id="ic2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.59 55.51">
-<g id="ic1">
-<path d="M0,16.33H8.38s12.6,18,16.5,39.29H16.09Zm38-.15H44.7V9l15.15-7.8V16.33H68.1V27.51H59.92V44.08c0,4.13,7.47.75,7.47.75l1.2,10.39a40.9,40.9,0,0,1-13.41,1.36S54,45.19,44.59,27.43v-.11h-.06c-1.85-3.48-4-7.2-6.54-11.14Z" transform="translate(0 -1.18)" style="fill:#aecd44;fill-rule:evenodd"/>
-<path d="M10,16.33s12.68,18,17,39.29h2.85l12-28.3h1.12a122,122,0,0,0-6.12-11.14H31.27L23,40.63l-7.43-24.3ZM52.47,56.21s-1.54-11-7.88-25.29V41.16c0,3.26-.45,13.27,7.42,15Z" transform="translate(0 -1.18)" style="fill:#575556;fill-rule:evenodd"/>
-</g>
-</svg>
+              <div class="screenThree__form-selectionAndSending">
+                <div class="screenThree__form-email">
+                  <p class="screenThree__form-price-title screenThree__title-fonts">Ваш e-mail</p>
+                  <input class="screenThree__form-inputEmail styleLabel" type="text" id="email" name="email"/>
+                </div>
+                <div class="screenThree__form-btn-wrap">
+                  <button class="screenThree__form-btn" type="submit">ПОДОБРАТЬ</button>
+                </div>
+                <p class="screenThree__form-agreement-text">Нажимая на кнопку Подобрать, вы даете согласие на обработку своих персональных данных и соглашаетесь с пользовательским соглашением. ** постарайтесь указать наиболее общее слово (корень слова). Например для "мясо говядины" лучше выбрать "говядина"</p>
               </div>
-              <div class="screenThree__form-selectionAndSending"><svg class="svgTwo" id="ic2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.59 55.51">
-<g id="ic1">
-<path class="svgRed" d="M0,16.33H8.38s12.6,18,16.5,39.29H16.09Zm38-.15H44.7V9l15.15-7.8V16.33H68.1V27.51H59.92V44.08c0,4.13,7.47.75,7.47.75l1.2,10.39a40.9,40.9,0,0,1-13.41,1.36S54,45.19,44.59,27.43v-.11h-.06c-1.85-3.48-4-7.2-6.54-11.14Z" transform="translate(0 -1.18)" style="fill:#aecd44;fill-rule:evenodd"/>
-<path class="svgYellow" d="M10,16.33s12.68,18,17,39.29h2.85l12-28.3h1.12a122,122,0,0,0-6.12-11.14H31.27L23,40.63l-7.43-24.3ZM52.47,56.21s-1.54-11-7.88-25.29V41.16c0,3.26-.45,13.27,7.42,15Z" transform="translate(0 -1.18)" style="fill:#575556;fill-rule:evenodd"/>
-</g>
-</svg>
-              </div>
-              <div class="screenThree__form-selectionAndSending"></div>
             </div>
           </form>
         </div>
