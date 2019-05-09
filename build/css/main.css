@@ -57,7 +57,9 @@ table {
   font-family: 'FiraSans-Book';
   color: #575455;
   text-transform: uppercase;
-  text-align: center; }
+  letter-spacing: -0.07rem;
+  text-align: center;
+  font-weight: bold; }
 
 .header__nav-fonts {
   font-size: 1.67rem;
@@ -121,7 +123,15 @@ table {
   text-decoration: underline;
   font-size: 1.66rem;
   font-family: 'SourceSansPro-Regular';
-  color: #212121; }
+  color: #212121;
+  -webkit-transition: all 0.3 ease;
+  -o-transition: all 0.3 ease;
+  transition: all 0.3 ease; }
+  .screenTwo__productCards-link-font:hover, .screenTwo__requestCards-link-font:hover, .screenTwo__tenderCards-link-font:hover {
+    text-decoration: none;
+    -webkit-transition: all 0.3 ease;
+    -o-transition: all 0.3 ease;
+    transition: all 0.3 ease; }
 
 .screenTwo__productCards-description-text, .screenTwo__requestCards-description-text, .screenTwo__tenderCards-description-text {
   font-size: 1.44rem;
@@ -133,7 +143,15 @@ table {
   text-decoration: underline;
   font-size: 1.44rem;
   font-family: 'SourceSansPro-Regular';
-  color: #317fce; }
+  color: #317fce;
+  -webkit-transition: all 0.3 ease;
+  -o-transition: all 0.3 ease;
+  transition: all 0.3 ease; }
+  .screenTwo__productCards-organization-font:hover, .screenTwo__requestCards-organization-font:hover, .screenTwo__tenderCards-organization-font:hover {
+    text-decoration: none;
+    -webkit-transition: all 0.3 ease;
+    -o-transition: all 0.3 ease;
+    transition: all 0.3 ease; }
 
 .screenTwo__productCards-date-text, .screenTwo__requestCards-date-text, .screenTwo__tenderCards-date-text {
   font-size: 1.44rem;
@@ -210,6 +228,8 @@ table {
   font-family: 'SourceSansPro-Regular';
   color: #bfbfbf;
   line-height: 2.6; }
+  .footer__nav-link-font:hover {
+    color: #fff; }
 
 .footer__info-text {
   font-size: 1.66rem;
@@ -557,27 +577,12 @@ a, ul, li {
   padding-left: 2rem;
   padding-right: 3rem; }
 
-.screenThree__form-inputMinPrice + label::before {
-  content: "";
-  border-left: 0.2rem solid #f0efef;
-  height: 5.5rem;
-  position: absolute;
-  right: 5rem; }
-
 .screenThree__form-inputMinPrice + label::after {
   content: "\20BD";
   color: #999999;
   position: absolute;
   right: 2.5rem;
   top: 0.4rem; }
-
-.screenThree__form-inputMaxPrice + label::before {
-  content: "";
-  border-left: 0.2rem solid #f0efef;
-  height: 5.5rem;
-  position: absolute;
-  left: 27rem;
-  bottom: 0rem; }
 
 .screenThree__form-inputMaxPrice + label::after {
   content: "\20BD";
@@ -597,10 +602,18 @@ a, ul, li {
   font-family: 'Source Sans Pro', sans-serif;
   text-transform: uppercase;
   color: #fff;
-  background: #ff7c07;
+  background: #ff8c25;
   padding: 1.7rem 4.22rem;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .screenOne__btn:hover {
+    background: #a1ce31;
+    -webkit-transition: all 0.3 ease;
+    -o-transition: all 0.3 ease;
+    transition: all 0.3 ease; }
 
 .screenOne__categories-btn {
   padding: 2.22rem 8.22rem;
@@ -636,7 +649,7 @@ a, ul, li {
   transition: all 0.3s ease;
   cursor: pointer; }
   .screenTwo__productCards-btn:hover, .screenTwo__requestCards-btn:hover, .screenTwo__tenderCards-btn:hover {
-    background: #ff7c07;
+    background: #ff8c25;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
@@ -646,10 +659,18 @@ a, ul, li {
   font-family: 'Source Sans Pro', sans-serif;
   text-transform: uppercase;
   color: #fff;
-  background: #ff7c07;
+  background: #ff8c25;
   padding: 1.7rem 4.22rem;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .screenThree__form-btn:hover {
+    background: #a1ce31;
+    -webkit-transition: all 0.3 ease;
+    -o-transition: all 0.3 ease;
+    transition: all 0.3 ease; }
 
 .checkin__btn-wrap {
   margin-top: 2.66rem;
@@ -662,7 +683,15 @@ a, ul, li {
   border: none;
   color: #fff;
   font-size: 1.66rem;
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .checkin__btn:hover {
+    background: #ff8c25;
+    -webkit-transition: all 0.3 ease;
+    -o-transition: all 0.3 ease;
+    transition: all 0.3 ease; }
 
 .notifications {
   width: 100%;
@@ -839,14 +868,14 @@ a, ul, li {
     width: 130rem;
     margin: 0 auto; }
   .header__logo {
-    width: 24rem;
+    width: 22.22rem;
     margin-right: 4.66rem; }
   .header__svgLogo-wrap {
     padding: 0;
     margin: 0; }
   .header__svgLogo {
-    width: 5.88rem;
-    height: 4.77rem; }
+    width: 5.9rem;
+    height: 4.8rem; }
   .header__logo-link {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1445,7 +1474,7 @@ a, ul, li {
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
   width: 40.44rem;
-  border: 1px solid #f0efef; }
+  border: 0.1rem solid #f0efef; }
   @media screen and (min-width: 1200px) {
     .news-form-column {
       -webkit-flex-basis: 41.11rem;
@@ -1554,13 +1583,13 @@ a, ul, li {
       text-transform: uppercase;
       border: none;
       outline: none;
-      background-color: #f37300;
+      background: #ff8c25;
       -webkit-transition: all 0.3s ease-out;
       -o-transition: all 0.3s ease-out;
       transition: all 0.3s ease-out;
       cursor: pointer; }
       .news-form-column .form-block__btn-wrap .form-block__btn:hover {
-        background-color: #ff8c25; }
+        background: #a1ce31; }
       @media screen and (min-width: 750px) {
         .news-form-column .form-block__btn-wrap .form-block__btn {
           width: auto;
