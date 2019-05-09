@@ -1,300 +1,159 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-
-	<!-- Titles -->
-	<title>404</title>
-    <meta name="description" content="">
-	<meta name="keywords" content="">
-
-	<!-- Адаптивная  верстка -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-	<!-- Syles -->
-	<link rel="stylesheet" href="css/style.min.css">
-	<link rel="stylesheet" href="fonts/fonts.css">
-
-	<!-- FavIcons -->
-	<link rel="icon" href="img/favicon.ico"  type="image/x-icon" />
-	<link rel="shortcut icon" href="img/favicon.ico"  type="image/x-icon" />
-    <link rel="apple-touch-icon" href="img/favicon.ico">
-
-</head>
-
-<body>
-    <div class="container-fluid">
-        <header class="container">
-            <div class="header">
-                <div class="mobile-nav">
-                    <button id="menu__button" class="cmn-toggle-switch cmn-toggle-switch__htx">
-                        <span>toggle menu</span>
-                    </button>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./fonts/fonts.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <title>Document</title>
+  </head>
+  <body class="body">
+    <div class="body__wrap">
+      <div class="problem__wrap">
+        <header class="header">
+          <div class="header__wrap">
+            <div class="header__logo"><a class="header__logo-link" href="index.html">
+                <div class="header__logo-box">
+                  <p class="header__logo-text">Viterra Trade</p>
+                  <use class="header__svgLogo-wrap"><svg class="header__svgLogo" id="ic2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.59 55.51">
+<g id="ic1">
+<path d="M0,16.33H8.38s12.6,18,16.5,39.29H16.09Zm38-.15H44.7V9l15.15-7.8V16.33H68.1V27.51H59.92V44.08c0,4.13,7.47.75,7.47.75l1.2,10.39a40.9,40.9,0,0,1-13.41,1.36S54,45.19,44.59,27.43v-.11h-.06c-1.85-3.48-4-7.2-6.54-11.14Z" transform="translate(0 -1.18)" style="fill:#aecd44;fill-rule:evenodd"/>
+<path d="M10,16.33s12.68,18,17,39.29h2.85l12-28.3h1.12a122,122,0,0,0-6.12-11.14H31.27L23,40.63l-7.43-24.3ZM52.47,56.21s-1.54-11-7.88-25.29V41.16c0,3.26-.45,13.27,7.42,15Z" transform="translate(0 -1.18)" style="fill:#575556;fill-rule:evenodd"/>
+</g>
+</svg>
+                  </use>
                 </div>
-                <div class="logo-wrap logo-wrap--login-page">
-                    <a class="logo-link" href="index.html">
-                        <div class="logo">
-                            <svg width="53px" height="43px"> 
-                                <use xlink:href="img/logo_header.svg#ic2" href="img/logo_header.svg#ic2"></use>
-                            </svg>
-                            <p class="company-name" aria-label="Название компании">Viterra Trade</p>
-                        </div>
-                        <p class="company-slogan" aria-label="Слоган компании">Объединение надежных партнеров</p>
-                    </a>   
-                </div>
-                <!-- logo-wrap -->
-                
-                <nav class="nav">
-                    <ul class="nav-list" role="menubar">
-                        <li class="nav__item" role="menuitem">
-                            <a class="nav__link submenu" href="#" aria-haspopup="true"
-                                data-toggle="dropdown">
-                                Новости
-                            </a>
-                            <ul class="submenu-nav" role="menu">
-                                <li class="submenu__item" role="menuitem"><a class="submenu__link" href="#">Ищу работу</a></li>
-                                    <li class="submenu__item" role="menuitem"><a class="submenu__link" href="#">Ищу сотрудников</a></li>
-                            </ul>  
-                        </li>
-                        <li class="nav__item" role="menuitem">
-                            <a class="nav__link submenu" href="#" aria-haspopup="true"
-                                data-toggle="dropdown">
-                                Объявления
-                            </a>
-                            <ul class="submenu-nav" role="menu">
-                                <li class="submenu__item" role="menuitem">
-                                    <a class="submenu__link" href="#">Ищу работу</a>
-                                </li>
-                                <li class="submenu__item" role="menuitem">
-                                    <a class="submenu__link" href="#">Ищу сотрудников</a>
-                                </li>
-                            </ul>  
-                        </li>
-                        <li class="nav__item" role="menuitem">
-                            <a class="nav__link submenu" href="#" aria-haspopup="true"
-                                data-toggle="dropdown">
-                                Реестр компаний
-                            </a>
-                            <ul class="submenu-nav" role="menu">
-                                <li class="submenu__item" role="menuitem">
-                                    <a class="submenu__link" href="#">Ищу работу</a>
-                                </li>
-                                <li class="submenu__item" role="menuitem">
-                                    <a class="submenu__link" href="#">Ищу сотрудников</a>
-                                </li>
-                            </ul>     
-                        </li>
-                            <li class="nav__item" role="menuitem">
-                                <a class="nav__link submenu" href="#" aria-haspopup="true"
-                                    data-toggle="dropdown">
-                                    Конкурсы Online
-                                </a>
-                                <ul class="submenu-nav" role="menu">
-                                    <li class="submenu__item" role="menuitem">
-                                        <a class="submenu__link" href="#">Ищу работу</a>
-                                    </li>
-                                    <li class="submenu__item" role="menuitem">
-                                        <a class="submenu__link" href="#">Ищу сотрудников</a>
-                                     </li>
-                                </ul>  
-                            </li>
-                            <li class="nav__item" role="menuitem">
-                                <a class="nav__link submenu" href="#" aria-haspopup="true"
-                                    data-toggle="dropdown">
-                                    Трудоустройство
-                                </a>
-                                    <ul class="submenu-nav" role="menu">
-                                        <li class="submenu__item" role="menuitem">
-                                            <a class="submenu__link" href="#">Ищу работу</a>
-                                        </li>
-                                        <li class="submenu__item" role="menuitem">
-                                            <a class="submenu__link" href="#">Ищу сотрудников</a>
-                                        </li>
-                                    </ul> 
-                            </li>
-                            <li class="nav__item" role="menuitem">
-                                <a class="nav__link submenu" href="#" aria-haspopup="true"
-                                    data-toggle="dropdown">
-                                    Проекты
-                                </a>
-                                <ul class="submenu-nav" role="menu">
-                                    <li class="submenu__item" role="menuitem">
-                                        <a class="submenu__link" href="#">Ищу работу</a>
-                                    </li>
-                                    <li class="submenu__item" role="menuitem">
-                                        <a class="submenu__link" href="#">Ищу сотрудников</a>
-                                    </li>
-                                </ul> 
-                            </li>
-                            <li class="nav__item" role="menuitem">
-                                <a class="nav__link support__link" href="#">Служба поддержки</a>
-                            </li>
-                        </ul>
-                </nav>
-                <!-- nav -->
-        </header> 
-        <!-- header -->
-        
-        <main class="main">
-            <section class="page-error">
-                <h1 class="visually-hidden">Ошибка 404</h1>
-                <div class="container">
-                    <div class="page-error-wrap">
-                        <div class="page-error__text-block">
-                            <h3 class="text-block__title">404</h3>
-                            <h4 class="text-block__subtitle">Похоже что-то пошло не так ...</h4>
-                            <p class="text-block__content">
-                                К сожалению мы не можем найти страницу, которую Вы ищите
-                                Обновите страницу или попробуйте позже
-                            </p>
-                            <a class="text-block__main-page-link" href="index.html">&#60; Вернуться на главную</a>
-                        </div>
-                    </div>  
-                </div>
-            </section>
-        </main>
-        
+                <p class="header__logo-subtitle-text">Объединение надежных партнеров</p></a></div>
+            <nav class="header__nav">
+              <ul class="header__nav-ul">
+                <li class="header__nav-li"><a class="header__nav-link header__nav-fonts" href="#">
+                    Новости<i class="fas fa-chevron-down mineStyleArrowDownIconNav"></i></a>
+                  <ul class="header__nav-submenu-ul">
+                    <li class="header__nav-submenu-li"><a class="header__nav-submenu-link header__nav-submenu-fonts" href="#">Ищу работу</a></li>
+                    <li class="header__nav-submenu-li"><a class="header__nav-submenu-link header__nav-submenu-fonts" href="#">Ищу сотрудников</a></li>
+                  </ul>
+                </li>
+                <li class="header__nav-li"><a class="header__nav-link header__nav-fonts" href="#">
+                    Объявления<i class="fas fa-chevron-down mineStyleArrowDownIconNav"></i></a>
+                  <ul class="header__nav-submenu-ul">
+                    <li class="header__nav-submenu-li"><a class="header__nav-submenu-link header__nav-submenu-fonts" href="#">Ищу работу</a></li>
+                    <li class="header__nav-submenu-li"><a class="header__nav-submenu-link header__nav-submenu-fonts" href="#">Ищу сотрудников</a></li>
+                  </ul>
+                </li>
+                <li class="header__nav-li"><a class="header__nav-link header__nav-fonts" href="#">
+                    Реестр компаний<i class="fas fa-chevron-down mineStyleArrowDownIconNav"></i></a>
+                  <ul class="header__nav-submenu-ul">
+                    <li class="header__nav-submenu-li"><a class="header__nav-submenu-link header__nav-submenu-fonts" href="#">Ищу работу</a></li>
+                    <li class="header__nav-submenu-li"><a class="header__nav-submenu-link header__nav-submenu-fonts" href="#">Ищу сотрудников</a></li>
+                  </ul>
+                </li>
+                <li class="header__nav-li"><a class="header__nav-link header__nav-fonts" href="#">
+                    Конкурсы Online<i class="fas fa-chevron-down mineStyleArrowDownIconNav"></i></a>
+                  <ul class="header__nav-submenu-ul">
+                    <li class="header__nav-submenu-li"><a class="header__nav-submenu-link header__nav-submenu-fonts" href="#">Ищу работу</a></li>
+                    <li class="header__nav-submenu-li"><a class="header__nav-submenu-link header__nav-submenu-fonts" href="#">Ищу сотрудников</a></li>
+                  </ul>
+                </li>
+                <li class="header__nav-li"><a class="header__nav-link header__nav-fonts" href="#">
+                    Трудоустройство<i class="fas fa-chevron-down mineStyleArrowDownIconNav"></i></a>
+                  <ul class="header__nav-submenu-ul">
+                    <li class="header__nav-submenu-li"><a class="header__nav-submenu-link header__nav-submenu-fonts" href="#">Ищу работу</a></li>
+                    <li class="header__nav-submenu-li"><a class="header__nav-submenu-link header__nav-submenu-fonts" href="#">Ищу сотрудников</a></li>
+                  </ul>
+                </li>
+                <li class="header__nav-li"><a class="header__nav-link header__nav-fonts" href="#">
+                    Проекты<i class="fas fa-chevron-down mineStyleArrowDownIconNav"></i></a>
+                  <ul class="header__nav-submenu-ul">
+                    <li class="header__nav-submenu-li"><a class="header__nav-submenu-link header__nav-submenu-fonts" href="#">Ищу работу</a></li>
+                    <li class="header__nav-submenu-li"><a class="header__nav-submenu-link header__nav-submenu-fonts" href="#">Ищу сотрудников</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__registrationMenu-wrap"></div>
+          </div>
+        </header>
+        <section class="problem__center"></section>
         <footer class="footer">
-            <div class="footer-top">
-                <div class="container">
-                    <nav class="footer-nav">
-                        <div class="first-column">
-                            <h3 class="column__title">Новости</h3>
-                            <ul class="column-list">
-                                <li>
-                                    <a class="column__link column__link--no-border" href="#">
-                                        Новости АПК
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="column__link column__link--no-line" href="#">Новости проекта</a>
-                                </li>
-                            </ul>      
-                        </div>
-                        <div class="second-column">
-                            <h3 class="column__title">База данных</h3>
-                            <ul class="column-list">
-                                <li>
-                                    <a class="column__link column__link--no-border" href="#">Каталог компаний</a>
-                                </li>
-                                <li>
-                                    <a class="column__link" href="#">Список пользователей</a>
-                                </li>
-                                <li>
-                                    <a class="column__link" href="#">Добавить компанию</a>
-                                </li>
-                                <li>
-                                    <a class="column__link column__link--no-line" href="#">Моя компания</a>
-                                </li>
-                            </ul>       
-                        </div>
-                        <div class="third-column">
-                            <h3 class="column__title">Трудоустройство</h3>
-                            <ul class="column-list">
-                                <li>
-                                    <a class="column__link column__link--no-border" href="#">Ищу работу</a>
-                                </li>
-                                <li>
-                                    <a class="column__link column__link--no-line" href="#">Ищу сотрудников</a>
-                                </li>
-                            </ul>      
-                        </div>
-                        <div class="fourth-column">
-                            <h3 class="column__title">Арбитраж</h3>
-                                <ul class="column-list">
-                                    <li>
-                                        <a class="column__link column__link--no-border column__link--long-line" href="#">Список арбитражных дел</a>
-                                    </li>
-                                    <li>
-                                        <a class="column__link column__link--long-line" href="#">Написать в арбитраж</a>
-                                    </li>
-                                    <li>
-                                        <a class="column__link column__link--long-line" href="#">Проверка контрагента</a>
-                                    </li>
-                                    <li><a class="column__link column__link--long-line" href="#">Рекомендации поставщикам</a>
-                                    </li>
-                                    <li>
-                                        <a class="column__link column__link--no-line" href="#">Рекомендации заказчикам</a>
-                                    </li>
-                                </ul>       
-                            </div>
-                            <div class="fifth-column">
-                                <h3 class="column__title">Еще</h3>
-                                <ul class="column-list">
-                                    <li>
-                                        <a class="column__link column__link--no-border" href="#">Правила сервиса</a>
-                                    </li>
-                                    <li>
-                                        <a class="column__link" href="#">Пользовательское соглашение</a>
-                                    </li>
-                                    <li>
-                                        <a class="column__link" href="#">Политика конфиденциальности</a>
-                                    </li>
-                                    <li>
-                                        <a class="column__link column__link--no-line" href="#">Задать вопрос</a>
-                                    </li>
-                                </ul>      
-                            </div>
-                        </nav>
+          <div class="footer__wrap">
+            <nav class="footer__nav">
+              <div class="footer__nav-column">
+                <p class="footer__nav-title">Новости</p>
+                <ul class="footer__nav-ul">
+                  <li class="footer__nav-li"><a class="footer__nav-link footer__nav-link-font" href="#">Новости АПК</a></li>
+                  <li class="footer__nav-li"><a class="footer__nav-link footer__nav-link-font" href="#">Новости проекта</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav-column">
+                <p class="footer__nav-title">База данных</p>
+                <ul class="footer__nav-ul">
+                  <li class="footer__nav-li"><a class="footer__nav-link footer__nav-link-font" href="#">Каталог компаний</a></li>
+                  <li class="footer__nav-li"><a class="footer__nav-link footer__nav-link-font" href="#">Список пользователей</a></li>
+                  <li class="footer__nav-li"><a class="footer__nav-link footer__nav-link-font" href="#">Добавить компанию</a></li>
+                  <li class="footer__nav-li"><a class="footer__nav-link footer__nav-link-font" href="#">Моя компания</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav-column">
+                <p class="footer__nav-title">Трудоустройство</p>
+                <ul class="footer__nav-ul">
+                  <li class="footer__nav-li"><a class="footer__nav-link footer__nav-link-font" href="#">Ищу работу</a></li>
+                  <li class="footer__nav-li"><a class="footer__nav-link footer__nav-link-font" href="#">Ищу сотрудников</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav-column">
+                <p class="footer__nav-title">Арбитраж</p>
+                <ul class="footer__nav-ul">
+                  <li class="footer__nav-li"><a class="footer__nav-link footer__nav-link-font" href="#">Список арбитражных дел</a></li>
+                  <li class="footer__nav-li"><a class="footer__nav-link footer__nav-link-font" href="#">Написать в арбитраж</a></li>
+                  <li class="footer__nav-li"><a class="footer__nav-link footer__nav-link-font" href="#">Проверка контрагента</a></li>
+                  <li class="footer__nav-li"><a class="footer__nav-link footer__nav-link-font" href="#">Рекомендации поставшщикам</a></li>
+                  <li class="footer__nav-li"><a class="footer__nav-link footer__nav-link-font" href="#">Рекомендации заказчикам</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav-column">
+                <p class="footer__nav-title">Еще</p>
+                <ul class="footer__nav-ul">
+                  <li class="footer__nav-li"><a class="footer__nav-link footer__nav-link-font" href="#">Правила сервиса</a></li>
+                  <li class="footer__nav-li"><a class="footer__nav-link footer__nav-link-font" href="#">Пользовательское соглашение</a></li>
+                  <li class="footer__nav-li"><a class="footer__nav-link footer__nav-link-font" href="#">Политик конфиденциальности</a></li>
+                  <li class="footer__nav-li"><a class="footer__nav-link footer__nav-link-font" href="#">Задать вопрос</a></li>
+                </ul>
+              </div>
+            </nav>
+            <div class="footer__bottom">
+              <div class="footer__bottom-wrap">
+                <div class="footer__about"><a class="footer__logo" href="#">
+                    <use class="footer__svgLogo-wrap"><svg class="footer__svgLogo" id="sl1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.59 55.51">
+<title>logo_footer</title>
+<g id="sl">
+<path d="M0,16.33H8.38s12.6,18,16.5,39.29H16.09Zm38-.15H44.7V9l15.15-7.8V16.33H68.1V27.51H59.92V44.08c0,4.13,7.47.75,7.47.75l1.2,10.39a40.9,40.9,0,0,1-13.41,1.36S54,45.19,44.59,27.43v-.11h-.06c-1.85-3.48-4-7.2-6.54-11.14Z" transform="translate(0 -1.18)" style="fill:#aecd44;fill-rule:evenodd"/>
+<path d="M10,16.33s12.68,18,17,39.29h2.85l12-28.3h1.12a122,122,0,0,0-6.12-11.14H31.27L23,40.63l-7.43-24.3ZM52.47,56.21s-1.54-11-7.88-25.29V41.16c0,3.26-.45,13.27,7.42,15Z" transform="translate(0 -1.18)" style="fill:#bcbbbb;fill-rule:evenodd"/>
+</g>
+</svg>
+                    </use></a>
+                  <div class="footer__info">
+                    <p class="footer__info-text">Meat Johns - торговая площадка пищевой промышленности</p>
+                    <div class="footer__info-textAndEmail">
+                      <p class="footer__info-text">Служба поддержки</p><a class="footer__info-text-link" href="#">info@mjapps.com</a>
                     </div>
-                    <!-- container -->
+                    <div class="footer__info-littleLine"></div>
+                    <p class="footer__info-text">ООО «Мит Джонс»  © 2018</p>
+                  </div>
                 </div>
-                <!-- footer-top -->
-            
-                <div class="footer-bottom">
-                    <div class="container">
-                        <div class="footer-bottom-wrap">
-                            <div class="logo-wrap logo-wrap--footer">
-                                <a class="logo-link" href="index.html">
-                                    <div class="logo" aria-label="Логотип компании Viterra Trade">
-                                        <svg width="53px" height="43px"> 
-                                            <use xlink:href="img/logo_footer.svg#sl1" href="img/logo_footer.svg#sl1"></use>
-                                        </svg>
-                                    </div>
-                                </a>   
-                            </div>
-                            <!-- logo-wrap -->
-                            <div class="company-info" aria-label="Информация о компании">
-                                <h4 class="company__name" aria-label="Название сервиса">
-                                    appAgro Technology - торговая площадка пищевой промышленности
-                                </h4>
-                                <p class="company-email" aria-label="Email службы поддержки">Служба поддержки <a href="mailto:info@mjapps.com">info@mjapps.com</a></p>
-                                <p class="copyright" aria-label="азвание компании">appAgro Technology © 2018</p>
-                            </div>
-                            <!-- company-info -->
-                            <ul class="social-list" aria-label="Ссылки на социальные сети">
-                                <li class="social__item">
-                                    <a class="social__link facebook" href="#" target="blank" aria-label="Фейсбук"></a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link twitter" href="#" target="blank" aria-label="Твиттер"></a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link google" href="#" target="blank" aria-label="Гугл плюс"></a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link linkedin" href="#" target="blank" aria-label="Линкедин"></a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link pinterest" href="#" target="blank" aria-label="Пинтерест"></a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link rss" href="#" target="blank" aria-label="рсс фид"></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- footer-bottom-wrap -->
-                    </div>
-                    <!-- container -->
-                </div>
-                <!-- footer-bottom -->
-            </footer>
-            <!-- footer -->  
-    </div>	
-
-<!-- Scripts -->
-<script src="js/main.min.js"></script>
-
-</body>
+                <div class="footer__social"><a class="footer__social-link" href="#">
+                    <p class="footer__social-link-text">Мы в социальных сетях:</p>
+                    <use class="footer__social-svg"><svg class="footer__social-svg-style" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 548.358 548.358" style="enable-background:new 0 0 548.358 548.358;" xml:space="preserve">
+<path d="M545.451,400.298c-0.664-1.431-1.283-2.618-1.858-3.569c-9.514-17.135-27.695-38.167-54.532-63.102l-0.567-0.571l-0.284-0.28l-0.287-0.287h-0.288c-12.18-11.611-19.893-19.418-23.123-23.415c-5.91-7.614-7.234-15.321-4.004-23.13c2.282-5.9,10.854-18.36,25.696-37.397c7.807-10.089,13.99-18.175,18.556-24.267c32.931-43.78,47.208-71.756,42.828-83.939l-1.701-2.847c-1.143-1.714-4.093-3.282-8.846-4.712c-4.764-1.427-10.853-1.663-18.278-0.712l-82.224,0.568c-1.332-0.472-3.234-0.428-5.712,0.144c-2.475,0.572-3.713,0.859-3.713,0.859l-1.431,0.715l-1.136,0.859c-0.952,0.568-1.999,1.567-3.142,2.995c-1.137,1.423-2.088,3.093-2.848,4.996c-8.952,23.031-19.13,44.444-30.553,64.238c-7.043,11.803-13.511,22.032-19.418,30.693c-5.899,8.658-10.848,15.037-14.842,19.126c-4,4.093-7.61,7.372-10.852,9.849c-3.237,2.478-5.708,3.525-7.419,3.142c-1.715-0.383-3.33-0.763-4.859-1.143c-2.663-1.714-4.805-4.045-6.42-6.995c-1.622-2.95-2.714-6.663-3.285-11.136c-0.568-4.476-0.904-8.326-1-11.563c-0.089-3.233-0.048-7.806,0.145-13.706c0.198-5.903,0.287-9.897,0.287-11.991c0-7.234,0.141-15.085,0.424-23.555c0.288-8.47,0.521-15.181,0.716-20.125c0.194-4.949,0.284-10.185,0.284-15.705s-0.336-9.849-1-12.991c-0.656-3.138-1.663-6.184-2.99-9.137c-1.335-2.95-3.289-5.232-5.853-6.852c-2.569-1.618-5.763-2.902-9.564-3.856c-10.089-2.283-22.936-3.518-38.547-3.71c-35.401-0.38-58.148,1.906-68.236,6.855c-3.997,2.091-7.614,4.948-10.848,8.562c-3.427,4.189-3.905,6.475-1.431,6.851c11.422,1.711,19.508,5.804,24.267,12.275l1.715,3.429c1.334,2.474,2.666,6.854,3.999,13.134c1.331,6.28,2.19,13.227,2.568,20.837c0.95,13.897,0.95,25.793,0,35.689c-0.953,9.9-1.853,17.607-2.712,23.127c-0.859,5.52-2.143,9.993-3.855,13.418c-1.715,3.426-2.856,5.52-3.428,6.28c-0.571,0.76-1.047,1.239-1.425,1.427c-2.474,0.948-5.047,1.431-7.71,1.431c-2.667,0-5.901-1.334-9.707-4c-3.805-2.666-7.754-6.328-11.847-10.992c-4.093-4.665-8.709-11.184-13.85-19.558c-5.137-8.374-10.467-18.271-15.987-29.691l-4.567-8.282c-2.855-5.328-6.755-13.086-11.704-23.267c-4.952-10.185-9.329-20.037-13.134-29.554c-1.521-3.997-3.806-7.04-6.851-9.134l-1.429-0.859c-0.95-0.76-2.475-1.567-4.567-2.427c-2.095-0.859-4.281-1.475-6.567-1.854l-78.229,0.568c-7.994,0-13.418,1.811-16.274,5.428l-1.143,1.711C0.288,140.146,0,141.668,0,143.763c0,2.094,0.571,4.664,1.714,7.707c11.42,26.84,23.839,52.725,37.257,77.659c13.418,24.934,25.078,45.019,34.973,60.237c9.897,15.229,19.985,29.602,30.264,43.112c10.279,13.515,17.083,22.176,20.412,25.981c3.333,3.812,5.951,6.662,7.854,8.565l7.139,6.851c4.568,4.569,11.276,10.041,20.127,16.416c8.853,6.379,18.654,12.659,29.408,18.85c10.756,6.181,23.269,11.225,37.546,15.126c14.275,3.905,28.169,5.472,41.684,4.716h32.834c6.659-0.575,11.704-2.669,15.133-6.283l1.136-1.431c0.764-1.136,1.479-2.901,2.139-5.276c0.668-2.379,1-5,1-7.851c-0.195-8.183,0.428-15.558,1.852-22.124c1.423-6.564,3.045-11.513,4.859-14.846c1.813-3.33,3.859-6.14,6.136-8.418c2.282-2.283,3.908-3.666,4.862-4.142c0.948-0.479,1.705-0.804,2.276-0.999c4.568-1.522,9.944-0.048,16.136,4.429c6.187,4.473,11.99,9.996,17.418,16.56c5.425,6.57,11.943,13.941,19.555,22.124c7.617,8.186,14.277,14.271,19.985,18.274l5.708,3.426c3.812,2.286,8.761,4.38,14.853,6.283c6.081,1.902,11.409,2.378,15.984,1.427l73.087-1.14c7.229,0,12.854-1.197,16.844-3.572c3.998-2.379,6.373-5,7.139-7.851c0.764-2.854,0.805-6.092,0.145-9.712C546.782,404.25,546.115,401.725,545.451,400.298z"/>
+</svg>
+                    </use></a></div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>
