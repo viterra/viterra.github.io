@@ -156,21 +156,7 @@ table {
 .screenTwo__productCards-date-text, .screenTwo__requestCards-date-text, .screenTwo__tenderCards-date-text {
   font-size: 1.44rem;
   font-family: 'SourceSansPro-Regular';
-  color: #999999;
-  text-align: left;
-  position: relative;
-  padding-left: 2.5rem; }
-  .screenTwo__productCards-date-text::before, .screenTwo__requestCards-date-text::before, .screenTwo__tenderCards-date-text::before {
-    content: "";
-    position: absolute;
-    background: url("../img/time.png");
-    background-position: center;
-    -webkit-background-size: contain;
-            background-size: contain;
-    background-repeat: no-repeat;
-    width: 1.44rem;
-    height: 1.44rem;
-    left: 0rem; }
+  color: #999999; }
 
 .screenTwo__tenderCards-date-text {
   padding-top: 0.6rem; }
@@ -248,25 +234,6 @@ table {
   font-size: 1.66rem;
   font-family: 'SourceSansPro-Regular';
   color: #fff; }
-
-.mineStyleUserIcon {
-  color: #767777;
-  font-size: 1.56rem; }
-
-.mineStyleArrowDownIconRegistration {
-  color: #767777;
-  font-size: 1rem;
-  padding-left: 0.9rem; }
-
-.mineStyleArrowDownIconNav {
-  color: #818282;
-  font-size: 1rem;
-  padding-left: 0.5rem; }
-
-.mineStyleUserIconScreenTwo {
-  padding-right: 1rem;
-  color: #7b7c7c;
-  font-size: 1.56rem; }
 
 .checkin__title-text {
   font-size: 2.66rem;
@@ -876,7 +843,10 @@ a, ul, li {
       -ms-transform: translateY(10%);
           transform: translateY(10%);
   height: 1.88rem;
-  fill: #545454; }
+  fill: #545454;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 .notifications-menu-list-link {
   display: -webkit-box;
@@ -1042,8 +1012,8 @@ a, ul, li {
       -webkit-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
-    .header__nav-li:hover .mineStyleArrowDownIconNav {
-      color: #fff;
+    .header__nav-li:hover .header__svgArrow {
+      fill: #fff;
       -webkit-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
@@ -1066,8 +1036,21 @@ a, ul, li {
       -webkit-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
+  .header__svgArrow {
+    fill: #767777;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    width: 0.88rem;
+    margin-left: 0.1rem;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
   .header__nav-submenu-ul {
-    display: none; }
+    display: none;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
   .header__nav-submenu-li {
     border-top: 0.15rem solid #767777;
     border-bottom: 0.15rem solid #767777;
@@ -1360,6 +1343,31 @@ a, ul, li {
   -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse; }
+
+.screenTwo__productCards-date-wrap, .screenTwo__requestCards-date-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.screenTwo__svgUser {
+  height: 1.44rem;
+  padding-right: 1rem;
+  fill: #7b7c7c; }
+
+.screenTwo__svgTime {
+  height: 1.44rem;
+  fill: #7b7c7c;
+  padding: 0rem 1rem 0rem 0rem;
+  margin: 0; }
+
+.screenTwo__svgTime-wrap {
+  margin: 0; }
 
 .bgWhite {
   background: #fff; }
