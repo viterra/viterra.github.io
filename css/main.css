@@ -228,7 +228,15 @@ table {
   font-family: 'SourceSansPro-Regular';
   color: #a1ce31;
   text-decoration: underline;
-  padding-left: 0.4rem; }
+  padding-left: 0.4rem;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .footer__info-text-link:hover {
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
 
 .footer__social-link-text {
   font-size: 1.66rem;
@@ -557,6 +565,19 @@ a, ul, li {
   position: absolute;
   left: 28.5rem;
   bottom: 1.9rem; }
+
+.screenThree__form-inputIndustry + label::after, .screenThree__form-inputRegion + label::after {
+  content: "";
+  background: url("../img/arrow-point-to-right (1) копия 2.png");
+  background-position: center;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 2.5rem;
+  left: 26rem;
+  width: 1.11rem;
+  height: 0.67rem; }
 
 .screenOne__btn-wrap {
   display: -webkit-box;
@@ -1344,7 +1365,7 @@ a, ul, li {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse; }
 
-.screenTwo__productCards-date-wrap, .screenTwo__requestCards-date-wrap {
+.screenTwo__productCards-date-wrap, .screenTwo__requestCards-date-wrap, .screenTwo__tenderCardsSvg-wrap {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1354,6 +1375,12 @@ a, ul, li {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row; }
+
+.screenTwo__tenderCardsSvg-wrap {
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
 
 .screenTwo__svgUser {
   height: 1.44rem;
@@ -1783,6 +1810,11 @@ a, ul, li {
   .footer__social-svg-style {
     width: 2.33rem;
     margin-left: 3.11rem; }
+  .footer__svgLogo {
+    height: 4.77rem;
+    -webkit-transform: translateY(-25%);
+        -ms-transform: translateY(-25%);
+            transform: translateY(-25%); }
 
 .footer__social-svg-style {
   fill: #fff; }
