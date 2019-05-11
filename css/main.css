@@ -68,8 +68,12 @@ table {
 
 .header__nav-submenu-fonts {
   font-size: 1.44rem;
+  font-family: 'SourceSansPro-Regular';
   color: #767676;
   padding-left: 2.11rem;
+  padding-right: 11.5rem;
+  padding-top: 1.4rem;
+  padding-bottom: 1.3rem;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
@@ -78,6 +82,9 @@ table {
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
+
+.bp {
+  padding-right: 15rem; }
 
 .screenOne__title-text {
   font-size: 4rem;
@@ -303,6 +310,9 @@ html {
 a, ul, li {
   text-decoration: none;
   list-style: none; }
+
+a, button, input {
+  outline: none; }
 
 .tabs_container {
   display: -webkit-box;
@@ -1084,10 +1094,10 @@ a, ul, li {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
   .header__nav-submenu-li {
-    border-top: 0.15rem solid #767777;
-    border-bottom: 0.15rem solid #767777;
-    border-left: 0.1rem solid #767777;
-    border-right: 0.1rem solid #767777;
+    border-top: 0.11rem solid #f0efef;
+    border-bottom: 0.11rem solid #f0efef;
+    border-left: 0.11rem solid #f0efef;
+    border-right: 0.11rem solid #f0efef;
     padding: 1.5rem 0rem; }
     .header__nav-submenu-li:first-child {
       border-bottom: none; }
