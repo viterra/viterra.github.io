@@ -388,7 +388,8 @@ a, ul, li {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 5.56rem; }
+  height: 5.56rem;
+  position: relative; }
 
 .screenOne__search-form {
   display: -webkit-box;
@@ -415,18 +416,6 @@ a, ul, li {
   color: #999999;
   padding-left: 6.22rem;
   margin-right: 0.56rem; }
-  .screenOne__searchProducts + label::before, .screenOne__searchRequests + label::before, .screenOne__searchTenders + label::before {
-    content: "";
-    background: url("../img/search (15).png");
-    background-position: center;
-    -webkit-background-size: contain;
-            background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 2rem;
-    left: -28rem;
-    width: 1.55rem;
-    height: 1.55rem; }
 
 .screenOne__regionProducts, .screenOne__regionRequests, .screenOne__regionTenders {
   display: -webkit-box;
@@ -442,30 +431,6 @@ a, ul, li {
   color: #999999;
   padding-left: 6.22rem;
   margin-right: 0.56rem; }
-  .screenOne__regionProducts + label::before, .screenOne__regionRequests + label::before, .screenOne__regionTenders + label::before {
-    content: "";
-    background: url("../img/placeholder (16).png");
-    background-position: center;
-    -webkit-background-size: contain;
-            background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 1.95rem;
-    left: -22.8rem;
-    width: 1.55rem;
-    height: 1.55rem; }
-  .screenOne__regionProducts + label::after, .screenOne__regionRequests + label::after, .screenOne__regionTenders + label::after {
-    content: "";
-    background: url("../img/arrow-point-to-right (1) копия 2.png");
-    background-position: center;
-    -webkit-background-size: contain;
-            background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 2.4rem;
-    left: -3rem;
-    width: 1.11rem;
-    height: 0.67rem; }
 
 .screenOne__minPriceProducts, .screenOne__maxPriceProducts, .screenOne__minPriceRequests, .screenOne__maxPriceRequests, .screenOne__minPriceTenders, .screenOne__maxPriceTenders {
   width: 15.56rem;
@@ -521,7 +486,7 @@ a, ul, li {
   background-color: #a1ce31; }
 
 .checkbox:checked + label:after {
-  background: url("../img/tick (6).png");
+  background: url("../img/tick (6).svg");
   -webkit-background-size: cover;
           background-size: cover; }
 
@@ -565,19 +530,6 @@ a, ul, li {
   position: absolute;
   left: 28.5rem;
   bottom: 1.9rem; }
-
-.screenThree__form-inputIndustry + label::after, .screenThree__form-inputRegion + label::after {
-  content: "";
-  background: url("../img/arrow-point-to-right (1) копия 2.png");
-  background-position: center;
-  -webkit-background-size: contain;
-          background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  bottom: 2.5rem;
-  left: 26rem;
-  width: 1.11rem;
-  height: 0.67rem; }
 
 .screenOne__btn-wrap {
   display: -webkit-box;
@@ -700,6 +652,44 @@ a, ul, li {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
 
+.header__registrationMenu {
+  position: relative; }
+
+.header__form-wrap {
+  display: none;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.header__registrationMenu:hover .header__form-wrap {
+  width: 33.66rem;
+  height: 27.55rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  background: #fff;
+  position: absolute;
+  right: 0rem;
+  top: 6rem;
+  z-index: 1;
+  border: 1rem solid yellowgreen;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
 .notifications {
   width: 100%;
   background-color: #292929;
@@ -754,10 +744,11 @@ a, ul, li {
     display: -ms-flexbox;
     display: flex;
     height: 100%;
-    padding: 2.1rem 1.3rem 2.1rem 1rem;
+    padding: 2.1rem 2.3rem 2.1rem 1rem;
     font-family: 'SourceSansPro-Regular';
     font-size: 1.55rem;
     font-weight: 400;
+    letter-spacing: -0.05rem;
     color: #fff;
     text-decoration: none;
     border-right: 0.11rem solid rgba(255, 255, 255, 0.2); }
@@ -883,6 +874,7 @@ a, ul, li {
       -ms-transform: translateY(10%);
           transform: translateY(10%);
   height: 1.88rem;
+  width: 1.88rem;
   fill: #545454;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -1244,6 +1236,28 @@ a, ul, li {
 .screenOne__svg {
   fill: #575455; }
 
+.screenOne__svgSearch-wrap, .screenOne__svgPlaceholder-wrap, .screenOne__svgInputArrow-wrap {
+  position: absolute;
+  fill: #575455; }
+
+.screenOne__svgSearch-wrap {
+  width: 1.55rem;
+  top: 1.9rem;
+  right: 52rem; }
+
+.screenOne__svgPlaceholder-wrap {
+  width: 1.55rem;
+  top: 1.9rem;
+  right: 21.5rem; }
+
+.screenOne__svgInputArrow-wrap {
+  top: 2.2rem;
+  right: 3.5rem;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 0.88rem; }
+
 .screenTwo__wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1490,6 +1504,18 @@ a, ul, li {
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
+  .screenThree__form-region, .screenThree__form-industry {
+    position: relative; }
+
+.screenThree__svgIndustryArrow-wrap, .screenThree__svgRegionArrow-wrap {
+  position: absolute;
+  top: 5.4rem;
+  right: 3rem;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 0.88rem;
+  fill: #575455; }
 
 .news {
   padding: 5.55rem 0; }
