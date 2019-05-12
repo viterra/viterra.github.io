@@ -3,12 +3,6 @@ const activeUserSvg = document.querySelector(`.headerVSRegForm__svgUser`);
 const activeArrowSvg = document.querySelector(`.headerVSRegForm__svgRegArrow`);
 const activeForm = document.querySelector(`.headerVSRegForm__form-wrap`);
 
-
-
-
-
-
-
 activeButton.addEventListener(`click`, function(e){
     e.preventDefault();
     // this.classList.toggle(`is__active`);
@@ -25,24 +19,3 @@ activeButton.addEventListener(`click`, function(e){
     }
 });
 
-
-
-
-
-
-
-
-
-// document.querySelector(`.headerVSRegForm__registrationMenu`).addEventListener(`click`, function(e){
-//     e.preventDefault();
-//     // this.classList.toggle(`is__active`);
-//     if (this.classList.contains(`headerVSRegForm__registrationMenuActive`)) {
-//         this.classList.remove(`headerVSRegForm__registrationMenuActive`);
-//         // document.querySelector(`#menu`).classList.remove(`nav__active`);
-//         // document.body.classList.remove(`body__active`);
-//     } else {
-//         this.classList.add(`headerVSRegForm__registrationMenuActive`);
-//         // document.querySelector(`#menu`).classList.add(`nav__active`);
-//         // document.body.classList.add(`body__active`);
-//     }
-// });
