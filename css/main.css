@@ -662,43 +662,22 @@ a, button, input {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
 
-.header__registrationMenu {
-  position: relative; }
-
-.header__form-wrap {
-  display: none;
+.headerVSRegForm__btn {
+  padding: 1.55rem 4.44rem;
+  background: #ff7c07;
+  border: none;
+  font-size: 1.66rem;
+  font-family: 'SourceSansPro-Regular';
+  color: #fff;
+  text-transform: uppercase;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
-
-.header__registrationMenu:hover .header__form-wrap {
-  width: 33.66rem;
-  height: 27.55rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  background: #fff;
-  position: absolute;
-  right: 0rem;
-  top: 6rem;
-  z-index: 1;
-  border: 1rem solid yellowgreen;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  .headerVSRegForm__btn:hover {
+    background: #a1ce31;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
 
 .notifications {
   width: 100%;
@@ -1102,6 +1081,244 @@ a, button, input {
     .header__nav-submenu-li:first-child {
       border-bottom: none; }
 
+.headerVSRegForm__logo-text {
+  font-size: 2.88rem;
+  font-family: 'Bernard MT Condensed';
+  font-weight: bolder;
+  color: #575455; }
+
+.headerVSRegForm__logo-subtitle-text {
+  font-size: 1.33rem;
+  font-family: 'FiraSans-Book';
+  color: #575455;
+  text-transform: uppercase;
+  letter-spacing: -0.11rem;
+  text-align: center;
+  font-weight: bold; }
+
+.headerVSRegForm__nav-fonts {
+  font-size: 1.67rem;
+  font-family: 'SourceSansPro-Regular';
+  color: #212121; }
+
+.headerVSRegForm__nav-submenu-fonts {
+  font-size: 1.44rem;
+  font-family: 'SourceSansPro-Regular';
+  color: #767676;
+  padding-left: 2.11rem;
+  padding-right: 11.5rem;
+  padding-top: 1.4rem;
+  padding-bottom: 1.3rem;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .headerVSRegForm__nav-submenu-fonts:hover {
+    color: #a1ce31;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+
+.bp {
+  padding-right: 15rem; }
+
+.headerVSRegForm {
+  background: #fff; }
+  .headerVSRegForm__wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 1.55rem;
+    padding-bottom: 2.11rem;
+    padding-right: 6rem;
+    width: 130rem;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 auto;
+    position: relative; }
+  .headerVSRegForm__logo {
+    width: 22.22rem;
+    margin-right: 4.66rem; }
+  .headerVSRegForm__svgLogo-wrap {
+    padding: 0;
+    margin: 0; }
+  .headerVSRegForm__svgLogo {
+    width: 5.9rem;
+    height: 4.8rem; }
+  .headerVSRegForm__logo-link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .headerVSRegForm__logo-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-bottom: 0.8rem; }
+  .headerVSRegForm__nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 97rem; }
+  .headerVSRegForm__nav-ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    margin: 0 auto;
+    z-index: 1; }
+  .headerVSRegForm__nav-li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1.44rem 1.89rem;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    position: relative;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .headerVSRegForm__nav-li:hover {
+      background: #a1ce31;
+      -webkit-border-radius: 0.3rem;
+              border-radius: 0.3rem;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    .headerVSRegForm__nav-li:hover .headerVSRegForm__nav-link {
+      color: #fff;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    .headerVSRegForm__nav-li:hover .headerVSRegForm__svgArrow {
+      fill: #fff;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    .headerVSRegForm__nav-li:hover .headerVSRegForm__nav-submenu-ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      position: absolute;
+      left: 0rem;
+      top: 4.6rem;
+      background: #fff;
+      width: 25.56rem;
+      padding-top: 3.3rem;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+  .headerVSRegForm__svgArrow {
+    fill: #767777;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    width: 0.88rem;
+    margin-left: 0.1rem;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .headerVSRegForm__nav-submenu-ul {
+    display: none;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .headerVSRegForm__nav-submenu-li {
+    border-top: 0.11rem solid #f0efef;
+    border-bottom: 0.11rem solid #f0efef;
+    border-left: 0.11rem solid #f0efef;
+    border-right: 0.11rem solid #f0efef;
+    padding: 1.5rem 0rem; }
+    .headerVSRegForm__nav-submenu-li:first-child {
+      border-bottom: none; }
+
+.headerVSRegForm__svgRegArrow {
+  fill: #767777;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 0.88rem;
+  margin-left: 0.5rem;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .headerVSRegForm__svgRegArrow-wrap {
+    padding: 0;
+    margin: 0; }
+
+.headerVSRegForm__svgUser {
+  height: 1.44rem;
+  padding-right: 0.5rem;
+  fill: #7b7c7c;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .headerVSRegForm__svgUser-wrap {
+    padding: 0;
+    margin: 0; }
+
+.headerVSRegForm__registrationMenu-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
 .screenOne {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1170,8 +1387,8 @@ a, button, input {
   margin-top: 3.33rem;
   padding-top: 4.44rem;
   padding-bottom: 3.61rem;
-  -webkit-box-shadow: 0rem 0rem 4rem -2rem grey;
-          box-shadow: 0rem 0rem 4rem -2rem grey; }
+  -webkit-box-shadow: 0rem 0rem 4rem -2rem #f1eded;
+          box-shadow: 0rem 0rem 4rem -2rem #f1eded; }
 
 .screenOne__categories-ul {
   width: 100%;
@@ -1873,6 +2090,350 @@ a, button, input {
 
 .footer__social-svg-style {
   fill: #fff; }
+
+.checkboxReg + label {
+  font-size: 1.33rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #999999; }
+
+.headerVSRegForm__registrationMenu {
+  position: relative; }
+
+.headerVSRegForm__email-wrap, .headerVSRegForm__password-wrap {
+  position: relative; }
+
+.headerVSRegForm__inputEmail, .headerVSRegForm__inputPassword {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30rem;
+  height: 5.55rem;
+  background: #f5f6f8;
+  border: none;
+  font-size: 1.55rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #999999;
+  padding-left: 6rem;
+  margin-bottom: 0.4rem; }
+
+.headerVSRegForm__badMemory-link-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.headerVSRegForm__badMemory-link {
+  font-size: 1.33rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #999999; }
+
+.headerVSRegForm__bottom-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem; }
+
+.headerVSRegForm__reg-link {
+  font-size: 1.55rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-decoration: underline;
+  color: #317fce;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .headerVSRegForm__reg-link:hover {
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+
+.headerVSRegForm__svgUserReg-wrap, .headerVSRegForm__svgPadlockReg-wrap {
+  fill: #858686;
+  position: absolute;
+  width: 1.55rem;
+  top: 1.95rem;
+  left: 2.3rem;
+  z-index: 1; }
+
+.headerVSRegForm__svgUserActive {
+  fill: #fff;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.headerVSRegForm__svgRegArrowActive {
+  fill: #fff;
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.headerVSRegForm__formLogPage-wrap {
+  -webkit-transform: translateY(-200%);
+      -ms-transform: translateY(-200%);
+          transform: translateY(-200%);
+  width: 36.66rem;
+  height: 27.55rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  background: #fff;
+  position: absolute;
+  right: 6rem;
+  top: 8.5rem;
+  -webkit-box-shadow: 0rem 0.22rem 1.11rem 0rem rgba(0, 0, 0, 0.06);
+          box-shadow: 0rem 0.22rem 1.11rem 0rem rgba(0, 0, 0, 0.06);
+  z-index: 1;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.headerVSRegForm__formLogPage-wrapActive {
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.headerVSRegForm__registrationMenu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 6.56rem;
+  height: 3.56rem;
+  border: 0.1rem solid #767777;
+  -webkit-border-radius: 2rem;
+          border-radius: 2rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.headerVSRegForm__registrationMenuActive {
+  background: #ff7c07;
+  border: 0.1rem solid #ff7c07;
+  -webkit-border-radius: 2rem;
+          border-radius: 2rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.checkboxReg + label {
+  font-size: 1.33rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #999999; }
+
+.headerVSRegForm__registrationMenu {
+  position: relative; }
+
+.headerVSRegForm__email-wrap, .headerVSRegForm__password-wrap {
+  position: relative; }
+
+.headerVSRegForm__inputEmail, .headerVSRegForm__inputPassword {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30rem;
+  height: 5.55rem;
+  background: #f5f6f8;
+  border: none;
+  font-size: 1.55rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #999999;
+  padding-left: 6rem;
+  margin-bottom: 0.4rem; }
+
+.headerVSRegForm__badMemory-link-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.headerVSRegForm__badMemory-link {
+  font-size: 1.33rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #999999; }
+
+.headerVSRegForm__bottom-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem; }
+
+.headerVSRegForm__reg-link {
+  font-size: 1.55rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-decoration: underline;
+  color: #317fce;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .headerVSRegForm__reg-link:hover {
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+
+.headerVSRegForm__svgUserReg-wrap, .headerVSRegForm__svgPadlockReg-wrap {
+  fill: #858686;
+  position: absolute;
+  width: 1.55rem;
+  top: 1.95rem;
+  left: 2.3rem;
+  z-index: 1; }
+
+.headerVSRegForm__svgUserActive {
+  fill: #fff;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.headerVSRegForm__svgRegArrowActive {
+  fill: #fff;
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.headerVSRegForm__form-wrap {
+  -webkit-transform: translateY(-200%);
+      -ms-transform: translateY(-200%);
+          transform: translateY(-200%);
+  width: 36.66rem;
+  height: 27.55rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  background: #fff;
+  position: absolute;
+  right: 6rem;
+  top: 8.5rem;
+  -webkit-box-shadow: 0rem 0.22rem 1.11rem 0rem rgba(0, 0, 0, 0.06);
+          box-shadow: 0rem 0.22rem 1.11rem 0rem rgba(0, 0, 0, 0.06);
+  z-index: 1;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.headerVSRegForm__form-wrapActive {
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.headerVSRegForm__registrationMenu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 6.56rem;
+  height: 3.56rem;
+  border: 0.1rem solid #767777;
+  -webkit-border-radius: 2rem;
+          border-radius: 2rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.headerVSRegForm__registrationMenuActive {
+  background: #ff7c07;
+  border: 0.1rem solid #ff7c07;
+  -webkit-border-radius: 2rem;
+          border-radius: 2rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 .login__wrap {
   display: -webkit-box;
