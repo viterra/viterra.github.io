@@ -14,11 +14,11 @@
         <div class="container-fluid">
           <div class="container">
             <div class="notifications-menu-wrap">
-              <div class="notifications-menu__addNotif">
+              <div class="notifications-menu__addNotif" id="addNotif">
                 <p class="notifications-menu__addNotif-text">+Добавить<br/> объявление</p>
               </div>
               <div class="notifications-menu__inputSearch-wrap">
-                <input type="text" placeholder="xnjkfb"/>
+                <input class="notifications-menu__input" type="text" placeholder="Введите текст"/><svg class="inputSVG" width="50ox" height="50px" style="fill: red;"><use id="searchSVGicon" xlink:href="img/search.svg"></use></svg>
               </div>
               <ul class="notifications-menu-list">
                 <li class="notifications-menu-list-li"><a class="notifications-menu-list-link" href="#">
@@ -1014,6 +1014,7 @@
           </div>
         </div>
       </footer>
+      <div class="headerVSRegForm__registrationMenu" id="regMenu" style="display: none;"></div>
     </div>
     <script src="./js/main.js"></script>
   </body>

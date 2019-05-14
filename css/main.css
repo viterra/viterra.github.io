@@ -679,6 +679,38 @@ a, button, input {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
 
+.notifications-menu__inputSearch-wrap {
+  display: none;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.notifications-menu__inputSearch-wrapActive {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75.2rem;
+  height: 5.15rem;
+  position: absolute;
+  left: 11.3rem;
+  top: 0rem;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.notifications-menu__input {
+  width: 100%;
+  height: 100%;
+  border: 0.22rem solid #292929;
+  padding-left: 4.88rem; }
+
+.inputSVG {
+  width: 5rem;
+  height: 5rem;
+  fill: red; }
+
 .notifications {
   width: 100%;
   background-color: #292929;
@@ -712,20 +744,6 @@ a, button, input {
       -webkit-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
-  .notifications-menu__inputSearch-wrap {
-    display: none; }
-  .notifications-menu__inputSearch-wrapActive {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 75.2rem;
-    height: 5.1rem;
-    background: #ff0707;
-    position: absolute;
-    left: 11.2rem;
-    top: 0rem;
-    z-index: 1; }
   .notifications-menu__addNotif-text {
     font-family: 'SourceSansPro-Regular';
     font-size: 1.55rem;
