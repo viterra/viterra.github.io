@@ -32,92 +32,39 @@ alertBtn.addEventListener(`click`, function(e){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const viewAllMessage = document.getElementById(`viewAllMessage`);
 const noNew = document.querySelector(`.notifications-menu__alertMore-center`);
-const nowNew = document.querySelector(`.notifications-menu__alertMore-centerNewNotif`)
-
-viewAllMessage.onclick = function () {
-    noNew.classList.toggle(`notifications-menu__alertMore-centerActive`);
-    console.log(`click+`);
-};
-
-
-viewAllMessage.onclick = function () {
-    nowNew.classList.toggle(`notifications-menu__alertMore-centerNewNotifActive`);
-    console.log(`click++`);
-};
+const nowNew = document.querySelector(`.notifications-menu__alertMore-centerNewNotif`);
+// const nowNew = document.querySelectorAll(`.notifications-menu__alertMore-centerNewNotif`);
 
 // viewAllMessage.onclick = function () {
-//     noNew.classList.add(`notifications-menu__alertMore-centerActive`);
-//     console.log(`click-`);
+//     noNew.classList.toggle(`notifications-menu__alertMore-centerActive`);
+//     nowNew.classList.toggle(`notifications-menu__alertMore-centerNewNotifActive`);
+//     console.log(`click++`);
+//     console.log(`click+`);
 // };
 
 
-// // viewAllMessage.onclick = function () {
-// //     nowNew.classList.add(`notifications-menu__alertMore-centerNewNotifActive`);
-// //     console.log(`click++`);
-// // };
 
-// viewAllMessage.onclick = function () {
-//     nowNew.classList.remove(`notifications-menu__alertMore-centerNewNotifActive`);
-//     console.log(`click--`);
-// };
 
-// viewAllMessage.addEventListener(`click`, function(e) {
-//     e.preventDefault();
-//     if (noNew.classList.contains(`notifications-menu__alertMore-centerActive`)) {
-//         noNew.classList.remove(`notifications-menu__alertMore-centerActive`);
-//         // nowNew.classList.remove(`notifications-menu__alertMore-centerNewNotifActive`);
-//     } else {
-//         noNew.classList.add(`notifications-menu__alertMore-centerActive`);
-//         // nowNew.classList.add(`notifications-menu__alertMore-centerNewNotifActive`);
-//     }
-// });
+viewAllMessage.addEventListener(`click`, function(e) {
+    e.preventDefault();
+    if (noNew.classList.contains(`notifications-menu__alertMore-centerActive`)) {
+        noNew.classList.remove(`notifications-menu__alertMore-centerActive`);
+        nowNew.classList.remove(`notifications-menu__alertMore-centerNewNotifActive`);
+    } else {
+        noNew.classList.add(`notifications-menu__alertMore-centerActive`);
+        nowNew.classList.add(`notifications-menu__alertMore-centerNewNotifActive`);
+    }
+});
 
-// viewAllMessage.addEventListener(`click`, function(e) {
-//     e.preventDefault();
-//     if (noNew.classList.contains(`notifications-menu__alertMore-centerActive`)) {
-//         // noNew.classList.remove(`notifications-menu__alertMore-centerActive`);
-//         nowNew.classList.add(`notifications-menu__alertMore-centerNewNotifActive`);
-//     } else {
-//         // noNew.classList.add(`notifications-menu__alertMore-centerActive`);
-//         nowNew.classList.remove(`notifications-menu__alertMore-centerNewNotifActive`);
-//     }
-// });
+
+
+const soundless = document.querySelector(`.notifications-menu__speakerAlertMore-Wrap`);
+const soundlessLine = document.querySelector(`.notifications-menu__speakerAlertMore-quiet`);
+const speaker = document.querySelector(`.speakerAlertMore`);
+
+soundless.onclick = function () {
+    soundlessLine.classList.toggle(`notifications-menu__speakerAlertMore-quietActive`);
+    speaker.classList.toggle(`speakerAlertMoreActive`);
+};

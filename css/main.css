@@ -847,6 +847,26 @@ a, button, input {
   padding-left: 2.1rem;
   padding-right: 2.44rem; }
 
+.notifications-menu__speakerAlertMore-Wrap {
+  position: relative;
+  cursor: pointer; }
+
+.notifications-menu__speakerAlertMore-quiet {
+  display: none; }
+
+.notifications-menu__speakerAlertMore-quietActive {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  border-bottom: 0.15rem solid #fff;
+  width: 1.8rem;
+  -webkit-transform: rotate(-36deg);
+      -ms-transform: rotate(-36deg);
+          transform: rotate(-36deg);
+  top: 0.7rem; }
+
 .notifications-menu__alertMore-topLink {
   display: -webkit-box;
   display: -webkit-flex;
@@ -881,6 +901,9 @@ a, button, input {
 
 .notifications-menu__alertMore-centerNewNotif {
   display: none; }
+
+.notifications-menu__alertMore-centerNewNotif-item {
+  padding-top: 2.33rem; }
 
 .notifications-menu__alertMore-centerNewNotifActive {
   display: -webkit-box;
@@ -946,6 +969,9 @@ a, button, input {
   fill: #fff;
   padding: 0;
   margin: 0; }
+
+.speakerAlertMoreActive {
+  fill: #5d5d5d; }
 
 .settingsAlertMore {
   fill: #5d5d5d;
