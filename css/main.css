@@ -434,7 +434,8 @@ a, button, input {
   font-size: 1.56rem;
   font-family: 'Source Sans Pro', sans-serif;
   color: #999999;
-  padding-left: 6.22rem; }
+  padding-left: 6.22rem;
+  margin-right: 0.56rem; }
 
 .screenOne__minPriceProducts, .screenOne__maxPriceProducts, .screenOne__minPriceRequests, .screenOne__maxPriceRequests, .screenOne__minPriceTenders, .screenOne__maxPriceTenders, .screenOne__minPriceLogistics, .screenOne__maxPriceLogistics {
   width: 15.56rem;
@@ -551,7 +552,8 @@ a, button, input {
   .screenOne__searchProducts, .screenOne__searchRequests, .screenOne__searchTenders, .screenOne__searchLogistics {
     width: 66.66%; }
   .screenOne__regionProducts, .screenOne__regionRequests, .screenOne__regionTenders, .screenOne__regionLogistics {
-    width: 33.33%; }
+    width: 33.33%;
+    padding-left: 6.5%; }
   .screenOne__minPriceProducts, .screenOne__maxPriceProducts, .screenOne__minPriceRequests, .screenOne__maxPriceRequests, .screenOne__minPriceTenders, .screenOne__maxPriceTenders, .screenOne__minPriceLogistics, .screenOne__maxPriceLogistics {
     width: 18.45%;
     margin-left: 0rem;
@@ -2160,7 +2162,7 @@ a, button, input {
   .screenOne__svgSearch-wrap {
     right: 96%; }
   .screenOne__svgPlaceholder-wrap {
-    right: 28.5%; }
+    right: 29.5%; }
   .forAdapt {
     display: none; } }
 
@@ -2337,6 +2339,21 @@ a, button, input {
 
 .bgWhite {
   background: #fff; }
+
+@media screen and (max-width: 980px) {
+  .screenTwo {
+    width: 100%;
+    margin: 0 auto; }
+    .screenTwo__wrap {
+      width: 100%; }
+    .screenTwo__column {
+      width: 50%;
+      padding: 1.11rem; }
+    .screenTwo__column-wrap {
+      width: 100%;
+      margin: 0 auto; }
+  .child-3 {
+    width: 100%; } }
 
 .screenThree {
   display: -webkit-box;
