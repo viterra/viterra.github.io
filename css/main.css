@@ -604,7 +604,35 @@ a, button, input {
 
 @media screen and (max-width: 560px) {
   .screenOne__minPriceProducts + label::after, .screenOne__minPriceRequests + label::after, .screenOne__minPriceTenders + label::after, .screenOne__minPriceLogistics + label::after, .screenOne__maxPriceProducts + label::after, .screenOne__maxPriceRequests + label::after, .screenOne__maxPriceTenders + label::after, .screenOne__maxPriceLogistics + label::after {
-    left: 10rem; } }
+    left: 18rem; } }
+
+@media screen and (max-width: 550px) {
+  .hide + label {
+    width: 11rem;
+    margin: 0rem 0.5rem 0rem 0rem; }
+  .screenOne__input-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .screenOne__searchProducts, .screenOne__searchRequests, .screenOne__searchTenders, .screenOne__searchLogistics {
+    width: 100%;
+    margin-bottom: 0.5rem; }
+  .screenOne__regionProducts, .screenOne__regionRequests, .screenOne__regionTenders, .screenOne__regionLogistics {
+    width: 100%; }
+  .screenOne__inputPrices-wrap {
+    width: 100%;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .screenOne__inputMinPrices-wrap, .screenOne__inputMaxPrices-wrap {
+    width: 49.5%;
+    padding-right: 0rem; }
+  .screenOne__checkBox-wrap {
+    left: 36%;
+    bottom: 10rem; } }
 
 .screenOne__btn-wrap {
   display: -webkit-box;
@@ -746,7 +774,14 @@ a, button, input {
 
 @media screen and (max-width: 980px) {
   .screenOne__btn {
-    padding: 1.7rem 6.22rem; } }
+    padding: 1.7rem 6.22rem; }
+  .screenOne__categories-btn {
+    margin-top: 2.66rem; } }
+
+@media screen and (max-width: 550px) {
+  .screenOne__btn {
+    margin-top: 6rem;
+    width: 100%; } }
 
 .header__btnForDdm {
   display: none; }
@@ -2103,7 +2138,6 @@ a, button, input {
   width: 136.67rem;
   background: #fff;
   margin-top: 3.33rem;
-  padding-top: 4.44rem;
   padding-bottom: 3.61rem;
   -webkit-box-shadow: 0rem 0rem 4rem -2rem #f1eded;
           box-shadow: 0rem 0rem 4rem -2rem #f1eded; }
@@ -2125,11 +2159,10 @@ a, button, input {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 2.78rem; }
+          justify-content: space-between; }
 
 .screenOne__categories-li {
-  width: 16.66%;
+  width: 18.88rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2141,7 +2174,10 @@ a, button, input {
           flex-direction: column;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  margin-left: 1.66rem;
+  margin-right: 1.66rem;
+  margin-top: 4.44rem; }
   .screenOne__categories-li:hover .screenOne__categories-title-text {
     color: #ff7c07;
     -webkit-transition: all 0.3s ease;
@@ -2208,14 +2244,25 @@ a, button, input {
     width: 100%; }
   .screenOne__categories-wrap {
     width: 100%; }
-  .screenOne__categories-li {
-    width: 25%; }
+  .screenOne__categories-ul {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
   .screenOne__svgSearch-wrap {
     right: 96%; }
   .screenOne__svgPlaceholder-wrap {
     right: 29.5%; }
   .forAdapt {
     display: none; } }
+
+@media screen and (max-width: 550px) {
+  .screenOne__svgSearch-wrap {
+    right: 95%; }
+  .screenOne__svgPlaceholder-wrap {
+    right: 95%;
+    top: 8rem; }
+  .screenOne__svgInputArrow-wrap {
+    top: 8rem; } }
 
 .screenTwo__wrap {
   display: -webkit-box;
@@ -2433,6 +2480,33 @@ a, button, input {
   .child-3 {
     width: 100%; } }
 
+@media screen and (max-width: 600px) {
+  .screenTwo__column {
+    width: 100%; }
+  .screenTwo__tenderCards-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .screenTwo__tenderCards-sending {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-right: 0rem;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .screenTwo__tenderCards-btn-wrap {
+    margin-right: 1.7rem; } }
+
 .screenThree {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2517,6 +2591,12 @@ a, button, input {
           transform: rotate(90deg);
   width: 0.88rem;
   fill: #575455; }
+
+@media screen and (max-width: 980px) {
+  .screenThree__wrap {
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem; } }
 
 .news {
   padding: 5.55rem 0; }
