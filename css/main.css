@@ -437,6 +437,20 @@ a, button, input {
   padding-left: 6.22rem;
   margin-right: 0.56rem; }
 
+.screenOne__inputPrices-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.screenOne__inputMinPrices-wrap, .screenOne__inputMaxPrices-wrap {
+  position: relative; }
+
 .screenOne__minPriceProducts, .screenOne__maxPriceProducts, .screenOne__minPriceRequests, .screenOne__maxPriceRequests, .screenOne__minPriceTenders, .screenOne__maxPriceTenders, .screenOne__minPriceLogistics, .screenOne__maxPriceLogistics {
   width: 15.56rem;
   height: 5.56rem;
@@ -447,12 +461,13 @@ a, button, input {
   font-size: 1.56rem;
   color: #999999;
   padding-left: 1.89rem; }
-  .screenOne__minPriceProducts + label::after, .screenOne__maxPriceProducts + label::after, .screenOne__minPriceRequests + label::after, .screenOne__maxPriceRequests + label::after, .screenOne__minPriceTenders + label::after, .screenOne__maxPriceTenders + label::after, .screenOne__minPriceLogistics + label::after, .screenOne__maxPriceLogistics + label::after {
-    content: "\20BD";
-    color: #999999;
-    position: absolute;
-    right: 2rem;
-    top: 2.2rem; }
+
+.screenOne__minPriceProducts + label::after, .screenOne__minPriceRequests + label::after, .screenOne__minPriceTenders + label::after, .screenOne__minPriceLogistics + label::after, .screenOne__maxPriceProducts + label::after, .screenOne__maxPriceRequests + label::after, .screenOne__maxPriceTenders + label::after, .screenOne__maxPriceLogistics + label::after {
+  content: "\20BD";
+  color: #999999;
+  position: absolute;
+  bottom: 1.9rem;
+  left: 13rem; }
 
 .styleLabel + label {
   width: 0;
@@ -520,7 +535,8 @@ a, button, input {
   font-size: 1.56rem;
   color: #999999;
   padding-left: 2rem;
-  padding-right: 3rem; }
+  padding-right: 3rem;
+  position: relative; }
 
 .screenThree__form-inputMinPrice + label::after {
   content: "\20BD";
@@ -546,18 +562,49 @@ a, button, input {
         -ms-flex-direction: column;
             flex-direction: column; }
   .screenOne__input-wrap {
-    padding-bottom: 0.44rem; }
+    padding-bottom: 0.44rem;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .screenOne__search-form {
-    width: 100%; }
+    width: 100%;
+    position: relative; }
   .screenOne__searchProducts, .screenOne__searchRequests, .screenOne__searchTenders, .screenOne__searchLogistics {
-    width: 66.66%; }
+    width: 66.66%;
+    padding-left: 6.5%; }
   .screenOne__regionProducts, .screenOne__regionRequests, .screenOne__regionTenders, .screenOne__regionLogistics {
     width: 33.33%;
     padding-left: 6.5%; }
+  .screenOne__inputPrices-wrap {
+    width: 40.11%; }
+  .screenOne__inputMinPrices-wrap, .screenOne__inputMaxPrices-wrap {
+    width: 50%;
+    padding-right: 0.56rem; }
   .screenOne__minPriceProducts, .screenOne__maxPriceProducts, .screenOne__minPriceRequests, .screenOne__maxPriceRequests, .screenOne__minPriceTenders, .screenOne__maxPriceTenders, .screenOne__minPriceLogistics, .screenOne__maxPriceLogistics {
-    width: 18.45%;
+    width: 100%;
     margin-left: 0rem;
-    margin-right: 0rem; } }
+    margin-right: 0rem; }
+  .screenOne__minPriceProducts + label::after, .screenOne__minPriceRequests + label::after, .screenOne__minPriceTenders + label::after, .screenOne__minPriceLogistics + label::after, .screenOne__maxPriceProducts + label::after, .screenOne__maxPriceRequests + label::after, .screenOne__maxPriceTenders + label::after, .screenOne__maxPriceLogistics + label::after {
+    left: 20rem; }
+  .screenOne__btn-wrap {
+    margin-right: 0.56rem; }
+  .screenOne__checkBox-wrap {
+    position: absolute;
+    left: 43%;
+    bottom: 4.4rem; } }
+
+@media screen and (max-width: 860px) {
+  .screenOne__minPriceProducts + label::after, .screenOne__minPriceRequests + label::after, .screenOne__minPriceTenders + label::after, .screenOne__minPriceLogistics + label::after, .screenOne__maxPriceProducts + label::after, .screenOne__maxPriceRequests + label::after, .screenOne__maxPriceTenders + label::after, .screenOne__maxPriceLogistics + label::after {
+    left: 16rem; } }
+
+@media screen and (max-width: 750px) {
+  .screenOne__minPriceProducts + label::after, .screenOne__minPriceRequests + label::after, .screenOne__minPriceTenders + label::after, .screenOne__minPriceLogistics + label::after, .screenOne__maxPriceProducts + label::after, .screenOne__maxPriceRequests + label::after, .screenOne__maxPriceTenders + label::after, .screenOne__maxPriceLogistics + label::after {
+    left: 12rem; } }
+
+@media screen and (max-width: 560px) {
+  .screenOne__minPriceProducts + label::after, .screenOne__minPriceRequests + label::after, .screenOne__minPriceTenders + label::after, .screenOne__minPriceLogistics + label::after, .screenOne__maxPriceProducts + label::after, .screenOne__maxPriceRequests + label::after, .screenOne__maxPriceTenders + label::after, .screenOne__maxPriceLogistics + label::after {
+    left: 10rem; } }
 
 .screenOne__btn-wrap {
   display: -webkit-box;
@@ -696,6 +743,10 @@ a, button, input {
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
+
+@media screen and (max-width: 980px) {
+  .screenOne__btn {
+    padding: 1.7rem 6.22rem; } }
 
 .header__btnForDdm {
   display: none; }
@@ -2204,7 +2255,6 @@ a, button, input {
 
 .screenTwo__head-wrap {
   width: 100%;
-  height: 7.77rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2216,7 +2266,8 @@ a, button, input {
           flex-direction: column;
   background: #292929;
   padding-left: 3.33rem;
-  padding-top: 2.22rem; }
+  padding-top: 2.22rem;
+  padding-bottom: 1.3rem; }
 
 .screenTwo__head-ul {
   display: -webkit-box;
@@ -2321,7 +2372,8 @@ a, button, input {
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
-          align-items: flex-end; }
+          align-items: flex-end;
+  padding-top: 1rem; }
 
 .screenTwo__svgUser {
   height: 1.44rem;
@@ -2352,6 +2404,32 @@ a, button, input {
     .screenTwo__column-wrap {
       width: 100%;
       margin: 0 auto; }
+    .screenTwo__tenderCards-wrap {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .screenTwo__tenderCards-sending {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-right: 1.77rem;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+    .screenTwo__tenderCards-btn-wrap {
+      margin-right: 0; }
   .child-3 {
     width: 100%; } }
 

@@ -160,10 +160,16 @@
                     </use>
                   </div>
                   <div class="screenOne__input-wrap">
-                    <input class="screenOne__minPriceProducts styleLabel" type="number" id="minPriceProducts" placeholder="От"/>
-                    <label for="minPriceProducts"></label>
-                    <input class="screenOne__maxPriceProducts styleLabel" type="number" id="maxPriceProducts" placeholder="До"/>
-                    <label for="maxPriceProducts"></label>
+                    <div class="screenOne__inputPrices-wrap">
+                      <div class="screenOne__inputMinPrices-wrap">
+                        <input class="screenOne__minPriceProducts styleLabel" type="number" id="minPriceProducts" placeholder="От"/>
+                        <label for="minPriceProducts"></label>
+                      </div>
+                      <div class="screenOne__inputMaxPrices-wrap">
+                        <input class="screenOne__maxPriceProducts styleLabel" type="number" id="maxPriceProducts" placeholder="До"/>
+                        <label for="maxPriceProducts"></label>
+                      </div>
+                    </div>
                     <div class="screenOne__btn-wrap">
                       <input class="screenOne__btn" type="button" value="Поиск"/>
                     </div>
@@ -198,10 +204,16 @@
                     </use>
                   </div>
                   <div class="screenOne__input-wrap">
-                    <input class="screenOne__minPriceRequests styleLabel" type="number" id="minPriceRequests" placeholder="От"/>
-                    <label for="minPriceRequests"></label>
-                    <input class="screenOne__maxPriceRequests styleLabel" type="number" id="maxPriceRequests" placeholder="До"/>
-                    <label for="maxPriceRequests"></label>
+                    <div class="screenOne__inputPrices-wrap">
+                      <div class="screenOne__inputMinPrices-wrap">
+                        <input class="screenOne__minPriceRequests styleLabel" type="number" id="minPriceRequests" placeholder="От"/>
+                        <label for="minPriceRequests"></label>
+                      </div>
+                      <div class="screenOne__inputMaxPrices-wrap">
+                        <input class="screenOne__maxPriceRequests styleLabel" type="number" id="maxPriceRequests" placeholder="До"/>
+                        <label for="maxPriceRequests"></label>
+                      </div>
+                    </div>
                     <div class="screenOne__btn-wrap">
                       <input class="screenOne__btn" type="button" value="Поиск"/>
                     </div>
@@ -236,10 +248,16 @@
                     </use>
                   </div>
                   <div class="screenOne__input-wrap">
-                    <input class="screenOne__minPriceTenders styleLabel" type="number" id="minPriceTenders" placeholder="От"/>
-                    <label for="minPriceTenders"></label>
-                    <input class="screenOne__maxPriceTenders styleLabel" type="number" id="maxPriceTenders" placeholder="До"/>
-                    <label for="maxPriceTenders"></label>
+                    <div class="screenOne__inputPrices-wrap">
+                      <div class="screenOne__inputMinPrices-wrap">
+                        <input class="screenOne__minPriceTenders styleLabel" type="number" id="minPriceTenders" placeholder="От"/>
+                        <label for="minPriceTenders"></label>
+                      </div>
+                      <div class="screenOne__inputMaxPrices-wrap">
+                        <input class="screenOne__maxPriceTenders styleLabel" type="number" id="maxPriceTenders" placeholder="До"/>
+                        <label for="maxPriceTenders"></label>
+                      </div>
+                    </div>
                     <div class="screenOne__btn-wrap">
                       <input class="screenOne__btn" type="button" value="Поиск"/>
                     </div>
@@ -274,10 +292,16 @@
                     </use>
                   </div>
                   <div class="screenOne__input-wrap">
-                    <input class="screenOne__minPriceLogistics styleLabel" type="number" id="minPriceLogistics" placeholder="От"/>
-                    <label for="minPriceLogistics"></label>
-                    <input class="screenOne__maxPriceLogistics styleLabel" type="number" id="maxPriceLogistics" placeholder="До"/>
-                    <label for="maxPriceLogistics"></label>
+                    <div class="screenOne__inputPrices-wrap">
+                      <div class="screenOne__inputMinPrices-wrap">
+                        <input class="screenOne__minPriceLogistics styleLabel" type="number" id="minPriceLogistics" placeholder="От"/>
+                        <label for="minPriceLogistics"></label>
+                      </div>
+                      <div class="screenOne__inputMaxPrices-wrap">
+                        <input class="screenOne__maxPriceLogistics styleLabel" type="number" id="maxPriceLogistics" placeholder="До"/>
+                        <label for="maxPriceLogistics"></label>
+                      </div>
+                    </div>
                     <div class="screenOne__btn-wrap">
                       <input class="screenOne__btn" type="button" value="Поиск"/>
                     </div>
@@ -667,15 +691,17 @@
                 </div>
                 <div class="screenTwo__tenderCards">
                   <div class="screenTwo__tenderCards-wrap">
-                    <p class="screenTwo__tenderCards-numberTender">№ 2323</p><a class="screenTwo__tenderCards-link screenTwo__tenderCards-link-font" href="#">Наименование тендера</a>
-                    <div class="screenTwo__tenderCardsSvg-wrap">
-                      <use class="screenTwo__svgTime-wrap"><svg class="screenTwo__svgTime" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+                    <div class="screenTwo__tenderCards-info">
+                      <p class="screenTwo__tenderCards-numberTender">№ 2323</p><a class="screenTwo__tenderCards-link screenTwo__tenderCards-link-font" href="#">Наименование тендера</a>
+                      <div class="screenTwo__tenderCardsSvg-wrap">
+                        <use class="screenTwo__svgTime-wrap"><svg class="screenTwo__svgTime" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
 <path d="M30,0.061c-16.542,0-30,13.458-30,30s13.458,29.879,30,29.879s30-13.337,30-29.879S46.542,0.061,30,0.061z M32,30.939c0,1.104-0.896,2-2,2H14c-1.104,0-2-0.896-2-2s0.896-2,2-2h14v-22c0-1.104,0.896-2,2-2s2,0.896,2,2V30.939z"/>
 </svg>
-                      </use>
-                      <p class="screenTwo__tenderCards-date-text">Окончание 28 ноября 2018</p>
+                        </use>
+                        <p class="screenTwo__tenderCards-date-text">Окончание 28 ноября 2018</p>
+                      </div>
+                      <p class="screenTwo__tenderCards-priceTender">260 000 рублей</p>
                     </div>
-                    <p class="screenTwo__tenderCards-priceTender">260 000 рублей</p>
                     <div class="screenTwo__tenderCards-sending">
                       <div class="screenTwo__tenderCards-btn-wrap">
                         <button class="screenTwo__tenderCards-btn">откликнуться</button>
@@ -693,15 +719,17 @@
                 </div>
                 <div class="screenTwo__tenderCards bgWhite">
                   <div class="screenTwo__tenderCards-wrap">
-                    <p class="screenTwo__tenderCards-numberTender">№ 2323</p><a class="screenTwo__tenderCards-link screenTwo__tenderCards-link-font" href="#">Наименование тендера название тендера</a>
-                    <div class="screenTwo__tenderCardsSvg-wrap">
-                      <use class="screenTwo__svgTime-wrap"><svg class="screenTwo__svgTime" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+                    <div class="screenTwo__tenderCards-info">
+                      <p class="screenTwo__tenderCards-numberTender">№ 2323</p><a class="screenTwo__tenderCards-link screenTwo__tenderCards-link-font" href="#">Наименование тендера название тендера</a>
+                      <div class="screenTwo__tenderCardsSvg-wrap">
+                        <use class="screenTwo__svgTime-wrap"><svg class="screenTwo__svgTime" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
 <path d="M30,0.061c-16.542,0-30,13.458-30,30s13.458,29.879,30,29.879s30-13.337,30-29.879S46.542,0.061,30,0.061z M32,30.939c0,1.104-0.896,2-2,2H14c-1.104,0-2-0.896-2-2s0.896-2,2-2h14v-22c0-1.104,0.896-2,2-2s2,0.896,2,2V30.939z"/>
 </svg>
-                      </use>
-                      <p class="screenTwo__tenderCards-date-text">Окончание 28 ноября 2018</p>
+                        </use>
+                        <p class="screenTwo__tenderCards-date-text">Окончание 28 ноября 2018</p>
+                      </div>
+                      <p class="screenTwo__tenderCards-priceTender">260 000 рублей</p>
                     </div>
-                    <p class="screenTwo__tenderCards-priceTender">260 000 рублей</p>
                     <div class="screenTwo__tenderCards-sending">
                       <div class="screenTwo__tenderCards-btn-wrap">
                         <button class="screenTwo__tenderCards-btn">откликнуться</button>
@@ -719,15 +747,17 @@
                 </div>
                 <div class="screenTwo__tenderCards">
                   <div class="screenTwo__tenderCards-wrap">
-                    <p class="screenTwo__tenderCards-numberTender">№ 2323</p><a class="screenTwo__tenderCards-link screenTwo__tenderCards-link-font" href="#">Наименование тендера</a>
-                    <div class="screenTwo__tenderCardsSvg-wrap">
-                      <use class="screenTwo__svgTime-wrap"><svg class="screenTwo__svgTime" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+                    <div class="screenTwo__tenderCards-info">
+                      <p class="screenTwo__tenderCards-numberTender">№ 2323</p><a class="screenTwo__tenderCards-link screenTwo__tenderCards-link-font" href="#">Наименование тендера</a>
+                      <div class="screenTwo__tenderCardsSvg-wrap">
+                        <use class="screenTwo__svgTime-wrap"><svg class="screenTwo__svgTime" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
 <path d="M30,0.061c-16.542,0-30,13.458-30,30s13.458,29.879,30,29.879s30-13.337,30-29.879S46.542,0.061,30,0.061z M32,30.939c0,1.104-0.896,2-2,2H14c-1.104,0-2-0.896-2-2s0.896-2,2-2h14v-22c0-1.104,0.896-2,2-2s2,0.896,2,2V30.939z"/>
 </svg>
-                      </use>
-                      <p class="screenTwo__tenderCards-date-text">Окончание 28 ноября 2018</p>
+                        </use>
+                        <p class="screenTwo__tenderCards-date-text">Окончание 28 ноября 2018</p>
+                      </div>
+                      <p class="screenTwo__tenderCards-priceTender">260 000 рублей</p>
                     </div>
-                    <p class="screenTwo__tenderCards-priceTender">260 000 рублей</p>
                     <div class="screenTwo__tenderCards-sending">
                       <div class="screenTwo__tenderCards-btn-wrap">
                         <button class="screenTwo__tenderCards-btn">откликнуться</button>
@@ -745,15 +775,17 @@
                 </div>
                 <div class="screenTwo__tenderCards bgWhite">
                   <div class="screenTwo__tenderCards-wrap">
-                    <p class="screenTwo__tenderCards-numberTender">№ 2323</p><a class="screenTwo__tenderCards-link screenTwo__tenderCards-link-font" href="#">Наименование тендера</a>
-                    <div class="screenTwo__tenderCardsSvg-wrap">
-                      <use class="screenTwo__svgTime-wrap"><svg class="screenTwo__svgTime" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+                    <div class="screenTwo__tenderCards-info">
+                      <p class="screenTwo__tenderCards-numberTender">№ 2323</p><a class="screenTwo__tenderCards-link screenTwo__tenderCards-link-font" href="#">Наименование тендера</a>
+                      <div class="screenTwo__tenderCardsSvg-wrap">
+                        <use class="screenTwo__svgTime-wrap"><svg class="screenTwo__svgTime" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
 <path d="M30,0.061c-16.542,0-30,13.458-30,30s13.458,29.879,30,29.879s30-13.337,30-29.879S46.542,0.061,30,0.061z M32,30.939c0,1.104-0.896,2-2,2H14c-1.104,0-2-0.896-2-2s0.896-2,2-2h14v-22c0-1.104,0.896-2,2-2s2,0.896,2,2V30.939z"/>
 </svg>
-                      </use>
-                      <p class="screenTwo__tenderCards-date-text">Окончание 28 ноября 2018</p>
+                        </use>
+                        <p class="screenTwo__tenderCards-date-text">Окончание 28 ноября 2018</p>
+                      </div>
+                      <p class="screenTwo__tenderCards-priceTender">260 000 рублей</p>
                     </div>
-                    <p class="screenTwo__tenderCards-priceTender">260 000 рублей</p>
                     <div class="screenTwo__tenderCards-sending">
                       <div class="screenTwo__tenderCards-btn-wrap">
                         <button class="screenTwo__tenderCards-btn">откликнуться</button>
@@ -813,8 +845,6 @@
                     <label for="maxPrice"></label>
                   </div>
                 </div>
-              </div>
-              <div class="screenThree__form-selectionAndSending">
                 <div class="screenThree__form-email">
                   <p class="screenThree__form-price-title screenThree__title-fonts">Ваш e-mail</p>
                   <input class="screenThree__form-inputEmail styleLabel" type="text" id="email" name="email"/>
