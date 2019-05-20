@@ -379,8 +379,8 @@
       </section>
       <header class="header">
         <div class="header__wrap">
-          <div class="header__btnForDdm"> 
-            <button class="hamburger hamburger__line"><span class="hamburger__span"></span></button>
+          <div class="header__btnForDdm">
+            <div class="hamburger hamburger__line"><span class="hamburger__span"></span></div>
           </div>
           <div class="header__logo"><a class="header__logo-link" href="index.html">
               <div class="header__logo-box">
@@ -492,14 +492,16 @@
                       <div class="screenOne__inputMinPrices-wrap">
                         <input class="screenOne__minPriceProducts styleLabel" type="number" id="minPriceProducts" placeholder="От"/>
                         <label for="minPriceProducts"></label>
+                        <p class="screenOne__currencySymbol">&#8381;</p>
                       </div>
                       <div class="screenOne__inputMaxPrices-wrap">
                         <input class="screenOne__maxPriceProducts styleLabel" type="number" id="maxPriceProducts" placeholder="До"/>
                         <label for="maxPriceProducts"></label>
+                        <p class="screenOne__currencySymbol">&#8381;</p>
                       </div>
                     </div>
                     <div class="screenOne__btn-wrap">
-                      <input class="screenOne__btn" type="button" value="Поиск"/>
+                      <button class="screenOne__btn" value="Поиск">поиск</button>
                     </div>
                   </div>
                 </div>
@@ -536,14 +538,16 @@
                       <div class="screenOne__inputMinPrices-wrap">
                         <input class="screenOne__minPriceRequests styleLabel" type="number" id="minPriceRequests" placeholder="От"/>
                         <label for="minPriceRequests"></label>
+                        <p class="screenOne__currencySymbol">&#8381;</p>
                       </div>
                       <div class="screenOne__inputMaxPrices-wrap">
                         <input class="screenOne__maxPriceRequests styleLabel" type="number" id="maxPriceRequests" placeholder="До"/>
                         <label for="maxPriceRequests"></label>
+                        <p class="screenOne__currencySymbol">&#8381;</p>
                       </div>
                     </div>
                     <div class="screenOne__btn-wrap">
-                      <input class="screenOne__btn" type="button" value="Поиск"/>
+                      <button class="screenOne__btn" value="Поиск">поиск</button>
                     </div>
                   </div>
                 </div>
@@ -580,14 +584,16 @@
                       <div class="screenOne__inputMinPrices-wrap">
                         <input class="screenOne__minPriceTenders styleLabel" type="number" id="minPriceTenders" placeholder="От"/>
                         <label for="minPriceTenders"></label>
+                        <p class="screenOne__currencySymbol">&#8381;</p>
                       </div>
                       <div class="screenOne__inputMaxPrices-wrap">
                         <input class="screenOne__maxPriceTenders styleLabel" type="number" id="maxPriceTenders" placeholder="До"/>
                         <label for="maxPriceTenders"></label>
+                        <p class="screenOne__currencySymbol">&#8381;</p>
                       </div>
                     </div>
                     <div class="screenOne__btn-wrap">
-                      <input class="screenOne__btn" type="button" value="Поиск"/>
+                      <button class="screenOne__btn" value="Поиск">поиск</button>
                     </div>
                   </div>
                 </div>
@@ -598,7 +604,7 @@
               </form>
             </div>
             <input class="hide" type="radio" name="tabs" id="tab4"/>
-            <label class="tabsLabelFonts" for="tab4" title="ЛОГИСТИКА">Логистика</label>
+            <label class="tabsLabelFonts tabsLabelLastChild" for="tab4" title="ЛОГИСТИКА">Логистика</label>
             <div class="tab_content" id="tab_content_4">
               <form class="screenOne__search-form" action="#" method="post">
                 <div class="screenOne__input-container">
@@ -624,14 +630,16 @@
                       <div class="screenOne__inputMinPrices-wrap">
                         <input class="screenOne__minPriceLogistics styleLabel" type="number" id="minPriceLogistics" placeholder="От"/>
                         <label for="minPriceLogistics"></label>
+                        <p class="screenOne__currencySymbol">&#8381;</p>
                       </div>
                       <div class="screenOne__inputMaxPrices-wrap">
                         <input class="screenOne__maxPriceLogistics styleLabel" type="number" id="maxPriceLogistics" placeholder="До"/>
                         <label for="maxPriceLogistics"></label>
+                        <p class="screenOne__currencySymbol">&#8381;</p>
                       </div>
                     </div>
                     <div class="screenOne__btn-wrap">
-                      <input class="screenOne__btn" type="button" value="Поиск"/>
+                      <button class="screenOne__btn" value="Поиск">поиск</button>
                     </div>
                   </div>
                 </div>
@@ -1167,10 +1175,16 @@
                 <div class="screenThree__form-price">
                   <p class="screenThree__form-price-title screenThree__title-fonts">Цена</p>
                   <div class="screenThree__form-inputPrice-wrap">
-                    <input class="screenThree__form-inputMinPrice styleLabel" type="number" id="minPrice" name="minPrice" placeholder="От"/>
-                    <label for="minPrice"></label>
-                    <input class="screenThree__form-inputMaxPrice styleLabel" type="number" id="maxPrice" name="maxPrice" placeholder="До"/>
-                    <label for="maxPrice"></label>
+                    <div class="screenThree__form-inputMinPrice-wrap">
+                      <input class="screenThree__form-inputMinPrice styleLabel" type="number" id="minPrice" name="minPrice" placeholder="От"/>
+                      <label for="minPrice"></label>
+                      <p class="screenThree__currencySymbol">&#8381;</p>
+                    </div>
+                    <div class="screenThree__form-inputMaxPrice-wrap">
+                      <input class="screenThree__form-inputMaxPrice styleLabel" type="number" id="maxPrice" name="maxPrice" placeholder="До"/>
+                      <label for="maxPrice"></label>
+                      <p class="screenThree__currencySymbol">&#8381;</p>
+                    </div>
                   </div>
                 </div>
                 <div class="screenThree__form-email">
@@ -1250,7 +1264,7 @@
                 </div>
                 <div class="form-block__btn-warning-wrap">
                   <div class="form-block__btn-wrap">
-                    <input class="form-block__btn" type="submit" value="Отправить"/>
+                    <button class="form-block__btn" type="submit" value="Отправить">Отправить</button>
                   </div>
                   <p class="form-block__warning">Нажимая на кнопку Отправить, вы даете согласие на обработку своих персональных данных и соглашаетесь с пользовательским соглашением.</p>
                 </div>
