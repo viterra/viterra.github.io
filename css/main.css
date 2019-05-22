@@ -265,6 +265,11 @@ table {
   line-height: 1.2;
   padding-top: 1rem; }
 
+@media screen and (max-width: 980px) {
+  .footer__nav-title {
+    padding-top: 4rem;
+    padding-bottom: 0.5rem; } }
+
 @media screen and (max-width: 320px) {
   .header__logo-subtitle-text {
     font-size: 1.1rem; } }
@@ -602,7 +607,7 @@ a, button, input {
 
 @media screen and (max-width: 550px) {
   .tabs_container {
-    margin-right: -1.5%; }
+    margin-right: -1%; }
     .tabs_container .tab_content {
       width: 98.95%; }
   .hide + label {
@@ -808,7 +813,7 @@ a, button, input {
 @media screen and (max-width: 980px) {
   .screenThree__form-btn {
     width: 100%;
-    padding: 1.7rem 0rem; } }
+    padding: 1.75rem 0rem; } }
 
 .header__btnForDdm {
   display: none; }
@@ -2686,7 +2691,7 @@ a, button, input {
   .screenThree__svgIndustryArrow-wrap, .screenThree__svgRegionArrow-wrap {
     top: 8rem; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
   .screenThree__form-selectionAndSending {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2795,6 +2800,15 @@ a, button, input {
       background-color: #ff7c07; }
 
 .news-form-column {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
@@ -2806,7 +2820,7 @@ a, button, input {
           -ms-flex-preferred-size: 41.11rem;
               flex-basis: 41.11rem; } }
   .news-form-column__title {
-    padding: 3.11rem 0 3.11rem 3.11rem;
+    padding: 3.11rem;
     font-family: "Source Sans Pro";
     font-size: 2.33rem;
     font-weight: 300;
@@ -2863,8 +2877,7 @@ a, button, input {
       line-height: 2rem;
       color: #212121; }
     .news-form-column .form-block input {
-      height: 4.44rem;
-      margin-bottom: 2.44rem; }
+      height: 4.44rem; }
       @media screen and (min-width: 750px) {
         .news-form-column .form-block input {
           width: 98%; }
@@ -2929,6 +2942,10 @@ a, button, input {
       font-weight: 300;
       line-height: 2rem;
       color: #212121; }
+
+@media screen and (max-width: 980px) {
+  .container {
+    margin: 0rem 1rem; } }
 
 .footer {
   width: 100%; }
@@ -3072,21 +3089,27 @@ a, button, input {
   .footer__wrap {
     background: #292929; }
   .footer__nav {
-    padding-top: 7.77rem;
-    padding-bottom: 10.66rem;
-    padding-left: 1rem;
+    padding-top: 3.77rem;
+    padding-bottom: 7.22rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
-            justify-content: flex-start; }
+            justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
   .footer__navAdaptive {
-    width: 30%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-right: 8.33rem; }
+    margin-right: 5.22rem; }
   .footer__nav-column {
     margin: 0rem;
     padding-top: 0rem;
@@ -3098,13 +3121,40 @@ a, button, input {
 
 @media screen and (max-width: 600px) {
   .footer__navAdaptive {
-    width: 80%;
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     margin-right: 0rem; } }
+
+@media screen and (max-width: 600px) {
+  .footer__bottom-wrap {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .footer__social {
+    padding-right: 13rem; } }
+
+@media screen and (max-width: 375px) {
+  .footer__social {
+    padding-right: 11rem; } }
+
+@media screen and (max-width: 350px) {
+  .footer__social {
+    padding-right: 7rem; } }
+
+@media screen and (max-width: 340px) {
+  .footer__social {
+    padding-right: 5rem; } }
 
 .checkboxReg + label {
   font-size: 1.33rem;
