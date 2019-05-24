@@ -266,9 +266,21 @@ table {
   padding-top: 1rem; }
 
 @media screen and (max-width: 980px) {
+  .header__nav-fonts {
+    font-size: 2rem;
+    color: #fff; }
+  .header__nav-submenu-fonts {
+    font-size: 1.77rem;
+    color: #fff; }
+    .header__nav-submenu-fonts:hover {
+      color: #fff; }
   .footer__nav-title {
     padding-top: 4rem;
     padding-bottom: 0.5rem; } }
+
+@media screen and (min-width: 567px) and (max-width: 568px) {
+  .header__logo-subtitle-text {
+    font-size: 1.11rem; } }
 
 @media screen and (max-width: 320px) {
   .header__logo-subtitle-text {
@@ -820,8 +832,8 @@ a, button, input {
 
 .hamburger {
   font-size: 0rem;
-  width: 3.88rem;
-  height: 2.33rem;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   cursor: pointer;
   border: none; }
@@ -833,9 +845,9 @@ a, button, input {
     position: absolute;
     width: 3.88rem;
     height: 0.33rem;
-    top: 5rem;
-    right: 5.5rem;
-    background: #818282; }
+    background: #818282;
+    top: 50%;
+    left: 36%; }
     .hamburger__span::before {
       content: "";
       display: -webkit-box;
@@ -871,13 +883,15 @@ a, button, input {
   bottom: 0;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
-          transform: rotate(45deg); }
+          transform: rotate(45deg);
+  background: #fff; }
 
 .hamburger__line.isActive .hamburger__span::after {
   top: 0;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg); }
+          transform: rotate(-45deg);
+  background: #fff; }
 
 @media screen and (max-width: 980px) {
   .header__btnForDdm {
@@ -886,11 +900,16 @@ a, button, input {
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    top: 0;
-    left: 3rem;
-    width: 15rem;
-    height: 10rem;
-    padding-top: 3rem; } }
+    top: 0rem;
+    left: 0rem;
+    width: 14.76rem;
+    height: 100%; } }
+
+@media screen and (max-width: 550px) {
+  .header__btnForDdm {
+    width: 8.61rem; }
+  .hamburger__span {
+    left: 26%; } }
 
 .notifications-menu__inputSearch-wrap {
   display: none;
@@ -1606,16 +1625,131 @@ a, button, input {
       border-bottom: none; }
 
 @media screen and (max-width: 980px) {
-  .header__wrap {
+  .header {
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
     width: 100%;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-left: 0rem;
-    padding-right: 0rem; }
+    z-index: 5; }
+    .header__wrap {
+      width: 100%;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding-left: 0rem;
+      padding-right: 0rem; }
+    .header__nav {
+      display: none; }
+    .header__navActive {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      position: fixed;
+      left: 0rem;
+      top: 10.55rem;
+      width: 100%;
+      height: 100vh;
+      z-index: 3; }
+      .header__navActive::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #575556;
+        opacity: 0.5; }
+    .header__nav-ul {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 50%;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      background: #575556;
+      z-index: 4;
+      margin: 0;
+      padding-top: 5rem;
+      padding-left: 3.11rem;
+      padding-right: 3.11rem; }
+    .header__nav-li {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      position: static;
+      border-bottom: 0.11rem solid #686667; }
+      .header__nav-li:hover .header__nav-fonts {
+        color: #a1ce31; }
+      .header__nav-li:hover .header__svgArrow {
+        fill: #a1ce31;
+        -webkit-transform: rotate(270deg);
+            -ms-transform: rotate(270deg);
+                transform: rotate(270deg); }
+      .header__nav-li:last-child {
+        border-bottom: none; }
+      .header__nav-li:hover {
+        background: none;
+        -webkit-border-radius: none;
+                border-radius: none; }
+      .header__nav-li:hover .header__nav-submenu-ul {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        position: static;
+        background: none;
+        padding-top: 0rem;
+        width: 100%; }
+    .header__nav-link {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .header__nav-submenu-li {
+      border: none;
+      width: 100%; }
+    .header__svgArrow-wrap {
+      margin: 0; }
+    .header__svgArrow {
+      fill: #fff;
+      width: 1.33rem; } }
+
+@media screen and (max-width: 640px) {
+  .header__logo {
+    width: 23rem;
+    margin-right: 0rem; } }
+
+@media screen and (max-width: 550px) {
   .header__nav-ul {
-    display: none; } }
+    width: 100%; } }
 
 @media screen and (max-width: 375px) {
   .header__logo {
@@ -2161,8 +2295,10 @@ a, button, input {
     padding-bottom: 3.89rem; }
 
 @media screen and (max-width: 980px) {
-  .screenOne__wrap {
-    width: 100%; } }
+  .screenOne {
+    margin-top: 10rem; }
+    .screenOne__wrap {
+      width: 100%; } }
 
 .screenOne__categories-wrap {
   display: -webkit-box;
@@ -2854,7 +2990,7 @@ a, button, input {
   font-weight: 300;
   color: #fff;
   background-color: #292929;
-  padding: 3.11rem; }
+  padding: 3.11rem 3.33rem; }
 
 .form-block {
   width: 100%;
