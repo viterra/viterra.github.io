@@ -267,6 +267,8 @@ table {
   padding-top: 1rem; }
 
 @media screen and (max-width: 980px) {
+  .header__logo-subtitle-text {
+    font-weight: normal; }
   .header__nav-fonts {
     font-size: 2rem;
     color: #fff; }
@@ -278,14 +280,6 @@ table {
   .footer__nav-title {
     padding-top: 4rem;
     padding-bottom: 0.5rem; } }
-
-@media screen and (min-width: 568px) and (max-width: 568px) {
-  .header__logo-subtitle-text {
-    font-size: 1.11rem; } }
-
-@media screen and (max-width: 320px) {
-  .header__logo-subtitle-text {
-    font-size: 1.1rem; } }
 
 html {
   font-size: 10px; }
@@ -1075,10 +1069,13 @@ a, button, input {
 .notifications-menu__alertMore {
   display: none; }
 
+.notifications-menu__alertForAdapt {
+  display: none; }
+
 .notifications-menu__alertMoreActive {
   position: absolute;
-  left: 86.35rem;
-  top: 5rem;
+  right: 12.5rem;
+  top: 0rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1248,8 +1245,46 @@ a, button, input {
   padding-right: 1rem; }
 
 @media screen and (max-width: 980px) {
+  .notifications-menu__alertForAdapt {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    background: #292929;
+    margin-bottom: 2rem;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1.35rem 2rem;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .notifications-menu__alertForAdapt::before {
+      content: "";
+      position: absolute;
+      width: 0.66rem;
+      height: 0.66rem;
+      -webkit-border-radius: 0.33rem;
+              border-radius: 0.33rem;
+      background: #ff0707;
+      left: 3.5rem;
+      top: 1.2rem; }
+    .notifications-menu__alertForAdapt .notifications__svg {
+      fill: #fff; }
+    .notifications-menu__alertForAdapt:hover .notifications__svg {
+      fill: #fc8701;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
   .notifications-menu__alertMoreActive {
-    left: 0rem; } }
+    right: 0rem;
+    padding-top: 0rem;
+    border: none;
+    width: 74.66%;
+    z-index: 7; } }
 
 .notifications {
   width: 100%;
@@ -1808,6 +1843,7 @@ a, button, input {
     width: 100%;
     z-index: 5; }
     .header__logo {
+      width: 23.5rem;
       margin-right: 0; }
     .header__wrap {
       width: 100%;
