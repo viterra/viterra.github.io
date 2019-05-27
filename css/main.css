@@ -1327,6 +1327,8 @@ a, button, input {
       margin-left: 0.55rem; }
     .notifications-menu__link-icon {
       fill: rgba(255, 255, 255, 0.2); }
+  .notifications-menu__linkAdapt {
+    display: none; }
   .notifications-menu__alert {
     position: relative;
     cursor: pointer;
@@ -1586,8 +1588,49 @@ a, button, input {
     width: 100%; }
   .notifications-menu__addNotif, .notifications-menu-list-li, .notifications-menu__alert, .notifications-menu__settings, .notifications-menu__logout, .notifications-menu-user-block, .notifications-menu__money {
     padding-left: 4rem;
-    border-bottom: 0.11rem solid rgba(255, 255, 255, 0.2);
-    width: 100%; } }
+    width: 100%;
+    cursor: pointer; }
+  .notifications-menu__addNotif, .notifications-menu-list-li, .notifications-menu__alert, .notifications-menu__settings, .notifications-menu__money {
+    border-bottom: 0.11rem solid rgba(255, 255, 255, 0.2); }
+  .notifications-menu__alert, .notifications-menu__settings, .notifications-menu__logout {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .notifications-menu__money-text, .notifications-menu__addNotif-textAdapt {
+    padding-left: 2.5rem; }
+  .notifications-menu__addNotif {
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
+  .notifications-menu__money {
+    background: none; }
+    .notifications-menu__money:hover {
+      background: none; }
+  .notifications-menu__alert::before {
+    left: 5.4rem;
+    top: 1.2rem; }
+  .notifications-menu__logout {
+    padding-top: 1.35rem; }
+  .notifications-menu__linkAdapt {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: 'SourceSansPro-Regular';
+    font-size: 1.53rem;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 1rem; } }
 
 @media screen and (max-width: 550px) {
   .notifications-Active {
