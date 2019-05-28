@@ -281,6 +281,13 @@ table {
     padding-top: 4rem;
     padding-bottom: 0.5rem; } }
 
+@media screen and (max-width: 568px) {
+  .screenOne__title-text {
+    font-size: 3rem; }
+  .screenOne__subtitle-text {
+    font-size: 3.78rem;
+    font-weight: bold; } }
+
 html {
   font-size: 10px; }
 
@@ -1501,6 +1508,10 @@ a, button, input {
   padding-right: 1rem; }
 
 @media screen and (max-width: 980px) {
+  .notifications-menu__alertMore-top {
+    padding-top: 1.77rem; } }
+
+@media screen and (max-width: 980px) {
   .notifications {
     display: none; }
     .notifications-Active {
@@ -1628,7 +1639,7 @@ a, button, input {
     padding-left: 1rem; }
   .notifications-menu__alertMoreActive {
     right: 0rem;
-    top: 15.6rem;
+    top: 17rem;
     padding-top: 0rem;
     border: none;
     width: 74.66%;
@@ -1639,7 +1650,14 @@ a, button, input {
     position: fixed;
     width: 74.66%;
     top: 10.55rem;
-    z-index: 7; }
+    z-index: 7;
+    border-bottom: none;
+    padding-left: 2.1rem;
+    padding-top: 2.66rem;
+    padding-bottom: 1.77rem; }
+    .notifications-menu__alertAdaptActive::before {
+      left: 3.4rem;
+      top: 2.4rem; }
   .notifications-ActiveNone {
     height: 0rem;
     width: 74.66%; } }
