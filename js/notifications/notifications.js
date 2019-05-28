@@ -18,33 +18,31 @@ closeBTN.onclick = function () {
     // NOTIFICATIONS //
 const alertBtn = document.getElementById(`alertBtn`);
 const alertBtnActive = document.querySelector(`.notifications-menu__alertMore`);
+const notifActiveNone = document.querySelector(`.notifications`);
 
 
 alertBtn.addEventListener(`click`, function(e){
     e.preventDefault();
     if (alertBtnActive.classList.contains(`notifications-menu__alertMoreActive`)) {
+        this.classList.remove(`notifications-menu__alertAdaptActive`);
         alertBtnActive.classList.remove(`notifications-menu__alertMoreActive`);
+        notifActiveNone.classList.remove(`notifications-ActiveNone`);
     } else {
+        this.classList.add(`notifications-menu__alertAdaptActive`);
         alertBtnActive.classList.add(`notifications-menu__alertMoreActive`);
+        notifActiveNone.classList.add(`notifications-ActiveNone`);
     }
 });
 
 
+    // NOTIFICATIONS__MOBILE
 
 
+
+    // MESSAGE //
 const viewAllMessage = document.getElementById(`viewAllMessage`);
 const noNew = document.querySelector(`.notifications-menu__alertMore-center`);
 const nowNew = document.querySelector(`.notifications-menu__alertMore-centerNewNotif`);
-// const nowNew = document.querySelectorAll(`.notifications-menu__alertMore-centerNewNotif`);
-
-// viewAllMessage.onclick = function () {
-//     noNew.classList.toggle(`notifications-menu__alertMore-centerActive`);
-//     nowNew.classList.toggle(`notifications-menu__alertMore-centerNewNotifActive`);
-//     console.log(`click++`);
-//     console.log(`click+`);
-// };
-
-
 
 
 viewAllMessage.addEventListener(`click`, function(e) {
@@ -60,6 +58,7 @@ viewAllMessage.addEventListener(`click`, function(e) {
 
 
 
+    // VOLUME //
 const soundless = document.querySelector(`.notifications-menu__speakerAlertMore-Wrap`);
 const soundlessLine = document.querySelector(`.notifications-menu__speakerAlertMore-quiet`);
 const speaker = document.querySelector(`.speakerAlertMore`);
@@ -68,3 +67,5 @@ soundless.onclick = function () {
     soundlessLine.classList.toggle(`notifications-menu__speakerAlertMore-quietActive`);
     speaker.classList.toggle(`speakerAlertMoreActive`);
 };
+
+
