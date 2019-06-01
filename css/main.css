@@ -53,7 +53,7 @@ table {
   color: #575455; }
 
 .header__logo-subtitle-text {
-  font-size: 1.31rem;
+  font-size: 1.33rem;
   font-family: 'FiraSans-Book';
   color: #575455;
   text-transform: uppercase;
@@ -267,8 +267,11 @@ table {
   padding-top: 1rem; }
 
 @media screen and (max-width: 980px) {
+  .header__logo-text {
+    font-size: 3.4rem;
+    padding-left: 1.5rem; }
   .header__logo-subtitle-text {
-    font-weight: normal; }
+    letter-spacing: 0; }
   .header__nav-fonts {
     font-size: 2rem;
     color: #fff; }
@@ -326,11 +329,11 @@ html {
 
 @media (max-width: 2560px) {
   html {
-    font-size: 13.5px; } }
+    font-size: 15px; } }
 
 @media (max-width: 2250px) {
   html {
-    font-size: 12.75px; } }
+    font-size: 13.5px; } }
 
 @media (max-width: 1920px) {
   html {
@@ -338,25 +341,29 @@ html {
 
 @media (max-width: 1800px) {
   html {
-    font-size: 11px; } }
+    font-size: 11.25px; } }
 
 @media (max-width: 1600px) {
   html {
     font-size: 10px; } }
 
-@media (max-width: 1366.2px) {
+@media (max-width: 1366px) {
   html {
     font-size: 9px; } }
 
 @media (max-width: 1280px) {
   html {
-    font-size: 8.18px; } }
+    font-size: 8.165px; } }
 
 @media (max-width: 1140px) {
   html {
-    font-size: 7.05px; } }
+    font-size: 7.5px; } }
 
-@media (max-width: 1080px) {
+@media (max-width: 1110px) {
+  html {
+    font-size: 7.18px; } }
+
+@media (max-width: 1050px) {
   html {
     font-size: 6.9px; } }
 
@@ -1749,7 +1756,6 @@ a, button, input {
     margin: 0 auto;
     position: relative; }
   .header__logo {
-    width: 22.22rem;
     margin-right: 4.66rem; }
   .header__svgLogo-wrap {
     padding: 0;
@@ -1894,7 +1900,6 @@ a, button, input {
     width: 100%;
     z-index: 5; }
     .header__logo {
-      width: 23.5rem;
       margin-right: 0; }
     .header__wrap {
       width: 100%;
@@ -2009,7 +2014,6 @@ a, button, input {
 
 @media screen and (max-width: 640px) {
   .header__logo {
-    width: 23rem;
     margin-right: 0rem; } }
 
 @media screen and (max-width: 550px) {
@@ -2018,7 +2022,6 @@ a, button, input {
 
 @media screen and (max-width: 375px) {
   .header__logo {
-    width: 22.5rem;
     margin-right: 0rem; }
   .header__svgLogo {
     width: 5.9rem;
