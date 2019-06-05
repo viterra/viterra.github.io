@@ -252,13 +252,13 @@ table {
   font-family: 'SourceSansPro-Regular';
   color: #fff; }
 
-.checkin__title-text {
+.checkinLoginPage__title-text {
   font-size: 2.66rem;
   font-family: 'SourceSansPro-Regular';
   color: #fff;
   line-height: 1.2; }
 
-.checkin__subtitle-text {
+.checkinLoginPage__subtitle-text {
   font-size: 1.66rem;
   font-family: 'SourceSansPro-Regular';
   color: #fff;
@@ -776,11 +776,11 @@ a, button, input {
     -o-transition: all 0.3 ease;
     transition: all 0.3 ease; }
 
-.checkin__btn-wrap {
+.checkinLoginPage__btn-wrap {
   margin-top: 2.66rem;
   padding-bottom: 2.66rem; }
 
-.checkin__btn {
+.checkinLoginPage__btn {
   padding: 1.44rem 2.22rem;
   background: #a1ce31;
   text-transform: uppercase;
@@ -791,7 +791,7 @@ a, button, input {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
-  .checkin__btn:hover {
+  .checkinLoginPage__btn:hover {
     background: #ff8c25;
     -webkit-transition: all 0.3 ease;
     -o-transition: all 0.3 ease;
@@ -4004,7 +4004,7 @@ a, button, input {
   text-align: left;
   padding-bottom: 2.22rem; }
 
-.login__wrap {
+.loginPage__wrap {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4021,7 +4021,7 @@ a, button, input {
   background-position: center;
   background-repeat: no-repeat; }
 
-.center {
+.centerLoginPage {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4032,7 +4032,7 @@ a, button, input {
           justify-content: center;
   display: flex;
   width: 100%; }
-  .center__wrap {
+  .centerLoginPage__wrap {
     width: 107.77rem;
     display: -webkit-box;
     display: -webkit-flex;
@@ -4045,7 +4045,7 @@ a, button, input {
             flex-direction: row;
     padding-top: 7.77rem; }
 
-.checkin__wrap {
+.checkinLoginPage__wrap {
   width: 32.66rem;
   background: #575455;
   -webkit-border-radius: 1rem;
@@ -4053,7 +4053,7 @@ a, button, input {
   padding-left: 3.77rem;
   padding-top: 3.11rem;
   position: relative; }
-  .checkin__wrap::after {
+  .checkinLoginPage__wrap::after {
     position: absolute;
     content: "";
     display: -webkit-box;
@@ -4065,7 +4065,7 @@ a, button, input {
     border-top: 1.6rem solid #575455;
     border-right: 1.6rem solid #575455; }
 
-.farmer__wrap {
+.farmerLoginPage__wrap {
   width: 31.33rem;
   height: 51.77rem;
   background: url("../img/Слой 575.png");
@@ -4074,6 +4074,55 @@ a, button, input {
   -webkit-background-size: cover;
           background-size: cover;
   margin-top: 9.33rem; }
+
+.checkinPage__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background: url("../img/Группа 7.png");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.centerCheckinPage__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.checkinCheckinPage__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 41.66rem;
+  background: #fff;
+  padding: 5.33rem 6rem;
+  margin-top: 4.66rem;
+  margin-bottom: 5.55rem;
+  height: 530px; }
 
 .problem__center-wrap {
   display: -webkit-box;
