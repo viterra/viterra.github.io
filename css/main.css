@@ -266,6 +266,17 @@ table {
   line-height: 1.2;
   padding-top: 1rem; }
 
+.checkinCheckinPage__title {
+  font-size: 2.66rem;
+  font-family: 'SourceSansPro-Regular';
+  font-weight: bold;
+  color: #000; }
+
+.checkinCheckinPage__profileForm-text, .checkinCheckinPage__emailForm-text, .checkinCheckinPage__loginlForm-text, .checkinCheckinPage__phoneForm-text {
+  font-size: 1.66rem;
+  font-family: 'SourceSansPro-Regular';
+  color: #000; }
+
 @media screen and (max-width: 980px) {
   .header__logo-text {
     font-size: 3.4rem;
@@ -4427,7 +4438,7 @@ a, button, input {
 
 .regForm__title-text {
   font-size: 2.66rem;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'SourceSansPro-Regular';
   font-weight: bold;
   color: #000;
   text-align: left;
@@ -4551,6 +4562,20 @@ a, button, input {
      -moz-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+.centerCheckinPage__bottomSectionRight-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("../img/farmMan.png");
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  width: 29rem;
+  height: 48rem; }
 
 .checkinCheckinPage__wrap {
   display: -webkit-box;
