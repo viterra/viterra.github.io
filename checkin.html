@@ -146,6 +146,13 @@
                   <form class="checkinCheckinPage__form" action="" method="post">
                     <div class="checkinCheckinPage__profileForm-wrap">
                       <p class="checkinCheckinPage__profileForm-text">Профиль</p>
+                      <select class="checkinCheckinPage__selectForm" name="selectProfile">
+                        <option value="1">Животноводство 1</option>
+                        <option value="2">Животноводство 2</option>
+                        <option value="3">Животноводство 3</option>
+                        <option value="4">Животноводство 4</option>
+                        <option value="5">Животноводство 5</option>
+                      </select>
                     </div>
                     <div class="checkinCheckinPage__emailForm-wrap">
                       <p class="checkinCheckinPage__emailForm-text">Email</p>
@@ -160,11 +167,11 @@
                       <input class="checkinCheckinPage__phoneForm-input" type="number" id="checkinPageNumber" name="number"/>
                     </div>
                     <div class="checkinCheckinPage__checkBox-wrap">
-                      <input class="checkinCheckinPage__checkbox" type="checkbox" name="termsOfAgreement" id="checkinPageTermsOfAgreement" checked="checked"/>
-                      <label for="checkinCheckinPageTermsOfAgreement">Принимаю условия </label><a class="checkinCheckinPage__termsOfAgreement-link">пользовательского соглашения</a>
+                      <input class="checkbox checkinCheckinPageCheckbox" type="checkbox" name="termsOfAgreement" id="checkinPageTermsOfAgreement" checked="checked"/>
+                      <label for="checkinPageTermsOfAgreement">Принимаю условия </label><a class="checkinCheckinPage__termsOfAgreement-link">пользовательского соглашения</a>
                     </div>
                     <div class="checkinCheckinPage__btn-wrap">
-                      <button class="checkinCheckinPage__btn" value="продолжить"></button>
+                      <button class="checkinCheckinPage__btn">продолжить</button>
                     </div>
                   </form>
                 </div>
@@ -192,12 +199,42 @@
                   <div class="centerCheckinPage__bottomSection-wrap">
                     <div class="centerCheckinPage__bottomSectionLeft">
                       <div class="centerCheckinPage__bottomSectionLeft-wrap">
-                        <p class="centerCheckinPage__bottomSectionLeft-titleText">Зарегистрируйтесь и сможете</p>
-                        <p class="centerCheckinPage__bottomSectionLeft-subTitleText">Видеть контакты компаний</p>
-                        <p class="centerCheckinPage__bottomSectionLeft-subTitleText">Добавлять тендеры</p>
-                        <p class="centerCheckinPage__bottomSectionLeft-subTitleText">Использовать электронные документы</p>
-                        <p class="centerCheckinPage__bottomSectionLeft-subTitleText">Учавствовать в рейтинге</p>
-                        <p class="centerCheckinPage__bottomSectionLeft-subTitleText">Общаться на форуме</p>
+                        <p class="centerCheckinPage__bottomSectionLeft-titleText">Зарегистрируйтесь<br/>и сможете</p>
+                        <div class="centerCheckinPage__bottomSectionLeft-textWrap">
+                          <p class="centerCheckinPage__bottomSectionLeft-subTitleText">Видеть контакты компаний</p>
+                          <use class="centerCheckinPage__bottomSectionLeft-svgTextWrap"><svg class="centerCheckinPage__bottomSectionLeft-svgTextIcon" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 44 44">
+<path d="m22,0c-12.2,0-22,9.8-22,22s9.8,22 22,22 22-9.8 22-22-9.8-22-22-22zm12.7,15.1l0,0-16,16.6c-0.2,0.2-0.4,0.3-0.7,0.3-0.3,0-0.6-0.1-0.7-0.3l-7.8-8.4-.2-.2c-0.2-0.2-0.3-0.5-0.3-0.7s0.1-0.5 0.3-0.7l1.4-1.4c0.4-0.4 1-0.4 1.4,0l.1,.1 5.5,5.9c0.2,0.2 0.5,0.2 0.7,0l13.4-13.9h0.1c0.4-0.4 1-0.4 1.4,0l1.4,1.4c0.4,0.3 0.4,0.9 0,1.3z"/>
+</svg>
+                          </use>
+                        </div>
+                        <div class="centerCheckinPage__bottomSectionLeft-textWrap">
+                          <p class="centerCheckinPage__bottomSectionLeft-subTitleText">Добавлять тендеры</p>
+                          <use class="centerCheckinPage__bottomSectionLeft-svgTextWrap"><svg class="centerCheckinPage__bottomSectionLeft-svgTextIcon" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 44 44">
+<path d="m22,0c-12.2,0-22,9.8-22,22s9.8,22 22,22 22-9.8 22-22-9.8-22-22-22zm12.7,15.1l0,0-16,16.6c-0.2,0.2-0.4,0.3-0.7,0.3-0.3,0-0.6-0.1-0.7-0.3l-7.8-8.4-.2-.2c-0.2-0.2-0.3-0.5-0.3-0.7s0.1-0.5 0.3-0.7l1.4-1.4c0.4-0.4 1-0.4 1.4,0l.1,.1 5.5,5.9c0.2,0.2 0.5,0.2 0.7,0l13.4-13.9h0.1c0.4-0.4 1-0.4 1.4,0l1.4,1.4c0.4,0.3 0.4,0.9 0,1.3z"/>
+</svg>
+                          </use>
+                        </div>
+                        <div class="centerCheckinPage__bottomSectionLeft-textWrap">
+                          <p class="centerCheckinPage__bottomSectionLeft-subTitleText">Использовать электронные документы</p>
+                          <use class="centerCheckinPage__bottomSectionLeft-svgTextWrap"><svg class="centerCheckinPage__bottomSectionLeft-svgTextIcon" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 44 44">
+<path d="m22,0c-12.2,0-22,9.8-22,22s9.8,22 22,22 22-9.8 22-22-9.8-22-22-22zm12.7,15.1l0,0-16,16.6c-0.2,0.2-0.4,0.3-0.7,0.3-0.3,0-0.6-0.1-0.7-0.3l-7.8-8.4-.2-.2c-0.2-0.2-0.3-0.5-0.3-0.7s0.1-0.5 0.3-0.7l1.4-1.4c0.4-0.4 1-0.4 1.4,0l.1,.1 5.5,5.9c0.2,0.2 0.5,0.2 0.7,0l13.4-13.9h0.1c0.4-0.4 1-0.4 1.4,0l1.4,1.4c0.4,0.3 0.4,0.9 0,1.3z"/>
+</svg>
+                          </use>
+                        </div>
+                        <div class="centerCheckinPage__bottomSectionLeft-textWrap">
+                          <p class="centerCheckinPage__bottomSectionLeft-subTitleText">Учавствовать в рейтинге</p>
+                          <use class="centerCheckinPage__bottomSectionLeft-svgTextWrap"><svg class="centerCheckinPage__bottomSectionLeft-svgTextIcon" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 44 44">
+<path d="m22,0c-12.2,0-22,9.8-22,22s9.8,22 22,22 22-9.8 22-22-9.8-22-22-22zm12.7,15.1l0,0-16,16.6c-0.2,0.2-0.4,0.3-0.7,0.3-0.3,0-0.6-0.1-0.7-0.3l-7.8-8.4-.2-.2c-0.2-0.2-0.3-0.5-0.3-0.7s0.1-0.5 0.3-0.7l1.4-1.4c0.4-0.4 1-0.4 1.4,0l.1,.1 5.5,5.9c0.2,0.2 0.5,0.2 0.7,0l13.4-13.9h0.1c0.4-0.4 1-0.4 1.4,0l1.4,1.4c0.4,0.3 0.4,0.9 0,1.3z"/>
+</svg>
+                          </use>
+                        </div>
+                        <div class="centerCheckinPage__bottomSectionLeft-textWrap">
+                          <p class="centerCheckinPage__bottomSectionLeft-subTitleText">Общаться на форуме</p>
+                          <use class="centerCheckinPage__bottomSectionLeft-svgTextWrap"><svg class="centerCheckinPage__bottomSectionLeft-svgTextIcon" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 44 44">
+<path d="m22,0c-12.2,0-22,9.8-22,22s9.8,22 22,22 22-9.8 22-22-9.8-22-22-22zm12.7,15.1l0,0-16,16.6c-0.2,0.2-0.4,0.3-0.7,0.3-0.3,0-0.6-0.1-0.7-0.3l-7.8-8.4-.2-.2c-0.2-0.2-0.3-0.5-0.3-0.7s0.1-0.5 0.3-0.7l1.4-1.4c0.4-0.4 1-0.4 1.4,0l.1,.1 5.5,5.9c0.2,0.2 0.5,0.2 0.7,0l13.4-13.9h0.1c0.4-0.4 1-0.4 1.4,0l1.4,1.4c0.4,0.3 0.4,0.9 0,1.3z"/>
+</svg>
+                          </use>
+                        </div>
                       </div>
                     </div>
                     <div class="centerCheckinPage__bottomSectionRight">
