@@ -287,8 +287,7 @@ table {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  cursor: pointer;
-  line-height: 1.2; }
+  cursor: pointer; }
   .checkinCheckinPage__termsOfAgreement-link:hover {
     text-decoration: none;
     -webkit-transition: all 0.3s ease;
@@ -299,12 +298,14 @@ table {
   font-size: 5.33rem;
   font-family: 'SourceSansPro-Regular';
   color: #fff;
-  font-weight: bolder; }
+  font-weight: bolder;
+  line-height: 1.2; }
 
 .centerCheckinPage__quantity-text {
   font-size: 2rem;
   font-family: 'SourceSansPro-Regular';
-  color: #fff; }
+  color: #fff;
+  line-height: 1.2; }
 
 .centerCheckinPage__bottomSectionLeft-titleText {
   font-size: 2.66rem;
@@ -312,12 +313,14 @@ table {
   font-weight: bold;
   color: #000;
   margin-top: 6.66rem;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  line-height: 1.2; }
 
 .centerCheckinPage__bottomSectionLeft-subTitleText {
   font-size: 2rem;
   font-family: 'SourceSansPro-Regular';
-  color: #000; }
+  color: #000;
+  line-height: 1.2; }
 
 @media screen and (max-width: 980px) {
   .header__logo-text {
@@ -336,30 +339,6 @@ table {
   .footer__nav-title {
     padding-top: 4rem;
     padding-bottom: 0.5rem; } }
-
-@media screen and (max-width: 568px) {
-  .screenOne__title-text {
-    font-size: 3rem; }
-  .screenOne__subtitle-text {
-    font-size: 4.3rem;
-    font-weight: bold; } }
-
-@media screen and (max-width: 568px) {
-  .screenTwo__head-title {
-    font-size: 3rem; }
-  .screenTwo__productCards-link-font, .screenTwo__requestCards-link-font, .screenTwo__tenderCards-link {
-    font-size: 2.1rem;
-    font-weight: bold; }
-  .screenTwo__productCards-description-text, .screenTwo__requestCards-description-text {
-    font-size: 1.9rem; }
-  .screenTwo__tenderCards-date-text, .screenTwo__tenderCards-priceTender {
-    font-size: 1.7rem; }
-    .screenTwo__tenderCards-date-text::before, .screenTwo__tenderCards-priceTender::before {
-      font-size: 2rem; }
-  .screenThree__form-agreement-text {
-    font-size: 1.7rem; }
-  .screenThree__title-fonts {
-    font-size: 2rem; } }
 
 html {
   font-size: 9px; }
@@ -886,8 +865,7 @@ a, button, input {
     transition: all 0.3 ease; }
 
 .checkinCheckinPage__btn-wrap {
-  margin-top: 2.66rem;
-  padding-bottom: 2.66rem; }
+  margin-top: 2.66rem; }
 
 .checkinCheckinPage__btn {
   padding: 1.44rem 2.22rem;
@@ -2697,6 +2675,21 @@ a, button, input {
 .bp {
   padding-right: 15rem; }
 
+@media screen and (max-width: 980px) {
+  .headerVSRegFormLogPage__logo-text {
+    font-size: 3.4rem;
+    padding-left: 1.5rem; }
+  .headerVSRegFormLogPage__logo-subtitle-text {
+    letter-spacing: 0; }
+  .headerVSRegFormLogPage__nav-fonts {
+    font-size: 2rem;
+    color: #fff; }
+  .headerVSRegFormLogPage__nav-submenu-fonts {
+    font-size: 1.77rem;
+    color: #fff; }
+    .headerVSRegFormLogPage__nav-submenu-fonts:hover {
+      color: #fff; } }
+
 .headerVSRegFormLogPage {
   background: #fff; }
   .headerVSRegFormLogPage__wrap {
@@ -2922,6 +2915,159 @@ a, button, input {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 7.78rem; }
+
+@media screen and (max-width: 980px) {
+  .headerVSRegFormLogPage {
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+    z-index: 5; }
+    .headerVSRegFormLogPage__logo {
+      width: auto;
+      margin-right: 0; }
+    .headerVSRegFormLogPage__wrap {
+      width: 100%;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+         -moz-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding-left: 0rem;
+      padding-right: 0rem; }
+    .headerVSRegFormLogPage__nav {
+      display: none; }
+    .headerVSRegFormLogPage__navActive {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+         -moz-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      position: fixed;
+      left: 0rem;
+      top: 10.55rem;
+      width: 100%;
+      height: 100vh;
+      z-index: 3; }
+      .headerVSRegFormLogPage__navActive::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #575556;
+        opacity: 0.5; }
+    .headerVSRegFormLogPage__nav-ul {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+         -moz-box-orient: vertical;
+         -moz-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 50%;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+         -moz-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      background: #575556;
+      z-index: 4;
+      margin: 0;
+      padding-top: 5rem;
+      padding-left: 3.11rem;
+      padding-right: 3.11rem; }
+    .headerVSRegFormLogPage__nav-li {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+         -moz-box-orient: vertical;
+         -moz-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      position: static;
+      border-bottom: 0.11rem solid #686667; }
+      .headerVSRegFormLogPage__nav-li:hover .headerVSRegFormLogPage__nav-fonts {
+        color: #a1ce31; }
+      .headerVSRegFormLogPage__nav-li:hover .headerVSRegFormLogPage__svgArrow {
+        fill: #a1ce31;
+        -webkit-transform: rotate(270deg);
+            -ms-transform: rotate(270deg);
+             -o-transform: rotate(270deg);
+                transform: rotate(270deg); }
+      .headerVSRegFormLogPage__nav-li:last-child {
+        border-bottom: none; }
+      .headerVSRegFormLogPage__nav-li:hover {
+        background: none;
+        -webkit-border-radius: none;
+                border-radius: none; }
+      .headerVSRegFormLogPage__nav-li:hover .headerVSRegFormLogPage__nav-submenu-ul {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+           -moz-box-orient: vertical;
+           -moz-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        position: static;
+        background: none;
+        padding-top: 0rem;
+        width: 100%; }
+    .headerVSRegFormLogPage__nav-link {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+         -moz-box-orient: horizontal;
+         -moz-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+         -moz-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .headerVSRegFormLogPage__nav-submenu-li {
+      border: none;
+      width: 100%; }
+    .headerVSRegFormLogPage__svgArrow-wrap {
+      margin: 0; }
+    .headerVSRegFormLogPage__svgArrow {
+      fill: #fff;
+      width: 1.33rem; } }
+
+@media screen and (max-width: 640px) {
+  .headerVSRegFormLogPage__logo {
+    margin-right: 0rem; } }
+
+@media screen and (max-width: 550px) {
+  .headerVSRegFormLogPage__nav-ul {
+    width: 100%; } }
+
+@media screen and (max-width: 375px) {
+  .headerVSRegFormLogPage__logo {
+    margin-right: 0rem; }
+  .headerVSRegFormLogPage__svgLogo {
+    width: 5.9rem;
+    height: 4.8rem; } }
 
 .screenOne {
   display: -webkit-box;
@@ -3534,6 +3680,8 @@ a, button, input {
             flex-direction: row; }
   .screenThree__form-inputMinPrice-wrap, .screenThree__form-inputMaxPrice-wrap {
     position: relative; }
+  .screenThree__form-email {
+    padding-top: 3.55rem; }
   .screenThree__currencySymbol {
     position: absolute;
     color: #999999;
@@ -3581,7 +3729,8 @@ a, button, input {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .screenThree__form-email {
-    width: 36.67%; }
+    width: 36.67%;
+    padding-top: 0rem; }
   .screenThree__form-btn-wrap {
     width: 22.56%; }
   .screenThree__form-inputKeyword, .screenThree__form-inputIndustry, .screenThree__form-inputRegion, .screenThree__form-inputMinPrice, .screenThree__form-inputMaxPrice, .screenThree__form-inputEmail {
@@ -3939,15 +4088,6 @@ a, button, input {
   .form-block__warning {
     line-height: 2.2rem;
     padding-bottom: 4.4rem; } }
-
-@media screen and (max-width: 568px) {
-  .news-block__title {
-    font-size: 2rem;
-    font-weight: bold; }
-  .news-column__title {
-    font-size: 2.7rem; }
-  .form-block__warning {
-    font-size: 1.82rem; } }
 
 @media screen and (max-width: 550px) {
   .news-column {
@@ -4587,6 +4727,10 @@ a, button, input {
           background-size: cover;
   margin-top: 9.33rem; }
 
+@media screen and (max-width: 600px) {
+  .checkinLoginPage, .farmerLoginPage {
+    display: none; } }
+
 .checkinPage__wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4644,10 +4788,9 @@ a, button, input {
           flex-direction: column;
   width: 41.66rem;
   background: #fff;
-  padding: 5.33rem 5.88rem;
+  padding: 5.33rem 5.88rem 4.8rem 5.88rem;
   margin-top: 4.66rem;
-  margin-bottom: 5.55rem;
-  height: 58.88rem; }
+  margin-bottom: 5.55rem; }
 
 .checkinCheckinPage__phoneForm-wrap {
   margin-bottom: 1.55rem; }
@@ -4657,7 +4800,7 @@ a, button, input {
 
 .checkinCheckinPage__selectForm, .checkinCheckinPage__emailForm-input, .checkinCheckinPage__loginForm-input, .checkinCheckinPage__phoneForm-input {
   width: 29.77rem;
-  height: 4.22rem;
+  height: 4rem;
   border: 0.11rem solid #dddddd;
   -webkit-border-radius: 0.5rem;
           border-radius: 0.5rem; }
@@ -4754,6 +4897,10 @@ a, button, input {
   height: 47.77rem;
   margin-top: 3.88rem;
   margin-left: 2rem; }
+
+@media screen and (max-width: 600px) {
+  .centerCheckinPage__rightSection {
+    display: none; } }
 
 .problem__center-wrap {
   display: -webkit-box;
