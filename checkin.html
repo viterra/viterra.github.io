@@ -142,7 +142,9 @@
             <div class="centerCheckinPage__leftSection">
               <div class="centerCheckinPage__leftSection-wrap">
                 <div class="checkinCheckinPage__wrap">
-                  <p class="checkinCheckinPage__title">Регистрация</p>
+                  <div class="checkinCheckinPage__title-wrap">
+                    <p class="checkinCheckinPage__title-text">Регистрация</p><a class="checkinCheckinPage__title-link" href="#">Вход</a>
+                  </div>
                   <form class="checkinCheckinPage__form" action="" method="post">
                     <div class="checkinCheckinPage__profileForm-wrap">
                       <p class="checkinCheckinPage__profileForm-text">Профиль</p>
@@ -168,7 +170,7 @@
                     </div>
                     <div class="checkinCheckinPage__checkBox-wrap">
                       <input class="checkbox checkinCheckinPageCheckbox" type="checkbox" name="termsOfAgreement" id="checkinPageTermsOfAgreement" checked="checked"/>
-                      <label for="checkinPageTermsOfAgreement">Принимаю условия </label><a class="checkinCheckinPage__termsOfAgreement-link">пользовательского соглашения</a>
+                      <label for="checkinPageTermsOfAgreement">Принимаю условия </label><a class="checkinCheckinPage__termsOfAgreement-link">пользовательского<br/>соглашения</a>
                     </div>
                     <div class="checkinCheckinPage__btn-wrap">
                       <button class="checkinCheckinPage__btn">продолжить</button>
@@ -339,5 +341,6 @@
       </div>
     </div>
     <script src="./js/regform/regForm.js"></script>
+    <script src="./js/headerVSRegForm/headerVSRegForm.js"></script>
   </body>
 </html>
