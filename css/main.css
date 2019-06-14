@@ -4162,7 +4162,8 @@ a, button, input {
 .footer {
   width: 100%; }
   .footer__wrap {
-    background: #292929; }
+    background: #292929;
+    padding-bottom: 220px; }
   .footer__nav {
     display: -webkit-box;
     display: -webkit-flex;
@@ -4344,7 +4345,8 @@ a, button, input {
 
 @media screen and (max-width: 980px) {
   .footer__wrap {
-    background: #292929; }
+    background: #292929;
+    padding-bottom: 0px; }
   .footer__nav {
     padding-top: 3.77rem;
     padding-bottom: 7.22rem;
@@ -4468,10 +4470,14 @@ a, button, input {
       -ms-flex-align: start;
           align-items: flex-start;
   background: #fff;
-  padding-left: 5.77rem;
-  padding-top: 6.44rem;
+  padding: 6.44rem 5.77rem;
   margin-left: 2.88rem;
   margin-top: 8rem; }
+
+@media screen and (max-width: 600px) {
+  .regForm__wrapStatic {
+    width: 100%;
+    margin-left: 0rem; } }
 
 .headerVSRegForm__registrationMenu {
   position: relative; }
@@ -4666,10 +4672,50 @@ a, button, input {
   .headerVSRegForm__zIndexRegForm {
     z-index: -1; } }
 
+@media screen and (max-width: 600px) {
+  .headerVSRegForm__form {
+    width: 100%; }
+  .headerVSRegForm__inputEmail, .headerVSRegForm__inputPassword {
+    width: 100%; }
+  .headerVSRegForm__reg-link {
+    display: none; }
+  .headerVSRegForm__form-wrapActive {
+    padding-left: 5rem;
+    padding-right: 5rem; } }
+
 @media (max-width: 570px) {
   .headerVSRegForm__form-wrapActive {
     width: 75%;
     right: 12.5%; } }
+
+@media screen and (max-width: 450px) {
+  .headerVSRegForm__form {
+    width: 100%; } }
+
+.regForm__title-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+     -moz-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 100%; }
 
 .regForm__title-text {
   font-size: 2.66rem;
@@ -4678,6 +4724,30 @@ a, button, input {
   color: #000;
   text-align: left;
   padding-bottom: 2.22rem; }
+
+.regForm__title-link {
+  display: none; }
+
+@media screen and (max-width: 600px) {
+  .regForm__title-link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 2.07rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: underline;
+    color: #317fce;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer; }
+    .regForm__title-link:hover {
+      text-decoration: none;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; } }
 
 .loginPage__wrap {
   display: -webkit-box;
@@ -4726,6 +4796,11 @@ a, button, input {
        -moz-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-top: 7.77rem; }
 
 .checkinLoginPage__wrap {
@@ -4759,7 +4834,20 @@ a, button, input {
           background-size: cover;
   margin-top: 9.33rem; }
 
+@media screen and (max-width: 980px) {
+  .loginPage__wrap {
+    -webkit-background-size: auto auto;
+            background-size: auto;
+    background-position: bottom; }
+  .centerLoginPage__wrap {
+    padding-top: 16rem; }
+  .farmerLoginPage__wrap {
+    width: 25.77rem;
+    height: 42rem; } }
+
 @media screen and (max-width: 600px) {
+  .centerLoginPage__wrap {
+    padding-top: 0rem; }
   .checkinLoginPage, .farmerLoginPage {
     display: none; } }
 
