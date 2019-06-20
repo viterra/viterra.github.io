@@ -4163,7 +4163,8 @@ a, button, input {
   width: 100%; }
   .footer__wrap {
     background: #292929;
-    padding-bottom: 220px; }
+    padding-bottom: 55px;
+    padding-top: 55px; }
   .footer__nav {
     display: -webkit-box;
     display: -webkit-flex;
@@ -4346,7 +4347,8 @@ a, button, input {
 @media screen and (max-width: 980px) {
   .footer__wrap {
     background: #292929;
-    padding-bottom: 0px; }
+    padding-bottom: 0px;
+    padding-top: 0px; }
   .footer__nav {
     padding-top: 3.77rem;
     padding-bottom: 7.22rem;
@@ -4781,7 +4783,8 @@ a, button, input {
       -ms-flex-pack: center;
           justify-content: center;
   display: flex;
-  width: 100%; }
+  width: 100%;
+  margin-top: 110px; }
   .centerLoginPage__wrap {
     width: 107.77rem;
     display: -webkit-box;
@@ -4839,8 +4842,10 @@ a, button, input {
     -webkit-background-size: auto auto;
             background-size: auto;
     background-position: bottom; }
-  .centerLoginPage__wrap {
-    padding-top: 16rem; }
+  .centerLoginPage {
+    margin-top: 0px; }
+    .centerLoginPage__wrap {
+      padding-top: 16rem; }
   .farmerLoginPage__wrap {
     width: 25.77rem;
     height: 42rem; } }
